@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font: normal 16px "Montserrat", Georgia, sans-serif;
+}
+
+#gallery {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.item {
+    width: 20%;
+    height: 300px;
+    flex-grow: 1;
+    border: 1px solid black;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
