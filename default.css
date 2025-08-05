@@ -10,10 +10,68 @@ body {
     font: normal 16px "Montserrat", Georgia, sans-serif;
 }
 
+nav {
+    border-bottom: 5px solid black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li { 
+    float: right;
+}
+
+.home-link {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    line-height: 1.5;
+    transition: 0.3s;
+}
+
+.nav-link {
+    border-left: 1px solid black;
+}
+
+li a:hover {
+    color: white;
+    background-color: black;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: white;
+    z-index: 1;
+}
+
+.drop-link {
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    position: absolute;
+}
+
+main {
+    min-height: 100vh;
+}
+
 #gallery {
     display: flex;
     flex-flow: row wrap;
-    gap: 10px;
+    gap: 0.5em;
 }
 
 .column {
@@ -26,7 +84,7 @@ body {
     width: 100%;
     height: auto;
     object-fit: cover;
-    padding: 5px 0px;
+    padding: 0.25em 0px;
     transition: 0.3s;
 }
 
@@ -38,6 +96,7 @@ body {
 footer {
     background-color: black;
     color: white;
+    font-size: 0.75em;
     height: 100px;
     display: flex;
 }
