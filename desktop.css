@@ -1,0 +1,162 @@
+/* Universal styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font: normal 16px "Montserrat", Georgia, sans-serif;
+}
+
+a {
+    color: #53B3A1;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font: normal 10em "Josefin Sans", Georgia, sans-serif;
+    margin-bottom: 0;
+}
+
+/* Grid & Flex */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: [header] max-content [main] 7fr [footer] 1fr;
+    grid-gap: 1em;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.flex-container {
+    display: flex;
+}
+
+/* Header */
+#header {
+    border-bottom: 5px solid black;
+}
+
+#navigation {
+    flex-flow: row nowrap;
+    align-items: stretch;
+    align-content: flex-end;
+    list-style-type: none;
+    line-height: 1.5em;
+    padding: 0;
+}
+
+li a {
+    display: block;
+    color: black;
+    padding: 0.5em;
+}
+
+.home-link {
+    flex: 1 0 auto;
+}
+
+.home-link a:hover {
+    color: #53B3A1;
+}
+
+.nav-link {
+    border-left: 1px solid black;
+}
+
+.nav-link a:hover {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: black;
+    z-index: 1;
+}
+
+.drop-link {
+    text-align: left;
+    color: silver;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    position: absolute;
+}
+
+/* Main content */
+#main {
+    padding: 1.5em;
+    overflow: hidden;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#main .flex-container {
+    background: linear-gradient(-45deg, #53B3A1, #9D8DF1);
+    background-size: 200% 200%;
+    animation: gradient 10s ease infinite;
+}
+
+#intro {
+    border-left: 10px solid black;
+    width: 100%;
+    padding: 2em;
+}
+
+.wrapper {
+    margin-top: 1em;
+    overflow-x: scroll;
+}
+
+.scroll-gallery {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.scroll-gallery img {
+    height: 300px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.scroll-gallery img:hover {
+    opacity: 0.6;
+    transform: scale(.9);
+}
+
+/* Footer */
+#footer {
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+#credits {
+    color: white;
+    font-size: 0.75em;
+}
