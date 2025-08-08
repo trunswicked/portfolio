@@ -6,71 +6,162 @@
         <title>
             About | Kassidy Lewis
         </title>
-        <link rel="stylesheet" href="default.css">
+        <link rel="stylesheet" href="css/about.css">
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
         </style>
+        <script src="https://kit.fontawesome.com/f3040639fe.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
-            <nav>
-                <ul>
-                    <li class="home-link"><a href="index.html">Home</a></li>
-                    <li><a class="nav-link" href="contact.html">Contact</a></li>
-                    <li><a class="nav-link" href="about.html">About</a></li>
-                    <li><a class="nav-link" href="sketchbook.html">Sketchbook</a></li>
-                    <li class="dropdown">
-                        <a href=" ">Portfolio &#9662;</a>
-                        <div class="dropdown-content">
-                            <a class="drop-link" href="design.html">Design</a>
-                            <a class="drop-link" href="illustration.html">Illustration</a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
+            <!-- none -->
         </header>
-        <main>
+        <main class="container">
             <section id="about-main">
-                <div class="about-img">
-                    <img src="portrait.png">
+                <div class="arrow">
+                    <span>More &#9660;</span>
                 </div>
-                <div class="about-desc">
-                    <p><strong>About</strong></p>
-                    <br>
-                    <p>Kassidy is a self-taught illustrator & designer with a love for storytelling, colorful characters, and the natural environment. When she's not seated at her work desk, she's always searching for something new to spark her creativity.</p>
-                    <br>
-                    <p>She has also worked with over 20 partners from 2018-2024, which includes individual clients and local businesses. Her ultimate goal is to provide the tools entrepreneurs need to market themselves, and to deliver artistic product(s) to be enjoyed for years to come.</p>
+                <div class="grid grid-about">
+                    <img src="images/portrait.png" class="about-img">
+                    <div class="about-h h-underline">
+                        <h1>Hi there!</h1>
+                    </div>
+                    <div class="about-desc">
+                        <p>I'm Kassidy, a self-taught illustrator & designer with a love for storytelling, colorful characters, and the natural environment. When I'm not seated at my work desk, I'm always searching for something new to spark my creativity.</p>
+                        <p>I've also worked with 30+ partners from 2018-2024, which includes individual clients and local businesses. My ultimate goal is to provide the tools entrepreneurs need to market themselves, and to deliver artistic product(s) to be enjoyed for years to come.</p>
+                    </div>
                 </div>
             </section>
-            <section id="skills">
-                <p><strong>Skills</strong></p>
-                <div class="container">
+            <section id="education">
+                <h1 class="h-underline">Education</h1>
+                <h2 class="m-none-b">Arizona State University</h2>
+                <strong>BS in Graphic Design</strong>
+                <p class="m-none-t">2020 - 2025, graduated May 2025 <i class="fa-solid fa-graduation-cap"></i></p>
+                <h2 class="m-none-b">Huntington University Arizona</h2>
+                <strong>BS in Animation</strong>
+                <p class="m-none-t">2018 - 2020, transferred</p>
+            </section>
+            <section id="skills" class="m-top">
+                <h1 class="h-underline">Skills</h1>
+                <h2>Tools of the Trade</h2>
+                <div class="grid grid-skills">
                     <div class="skill-box">
-                        <div class="skill">1</div>
+                        <div class="skill">
+                            <img src="images/icon-illustrator.svg">
+                            <span>Illustrator</span>
+                        </div>
                     </div>
                     <div class="skill-box">
-                        <div class="skill">1</div>
+                        <div class="skill">
+                            <img src="images/icon-indesign.svg">
+                            <span>inDesign</span>
+                        </div>
                     </div>
                     <div class="skill-box">
-                        <div class="skill">1</div>
+                        <div class="skill">
+                            <img src="images/icon-photoshop.svg">
+                            <span>Photoshop</span>
+                        </div>
                     </div>
                     <div class="skill-box">
-                        <div class="skill">1</div>
+                        <div class="skill">
+                            <img src="images/icon-ae.svg">
+                            <span>After Effects</span>
+                        </div>
                     </div>
                     <div class="skill-box">
-                        <div class="skill">1</div>
+                        <div class="skill">
+                            <img src="images/icon-xd.svg">
+                            <span>Adobe XD</span>
+                        </div>
                     </div>
                     <div class="skill-box">
-                        <div class="skill">1</div>
+                        <div class="skill">
+                            <img src="images/icon-figma.svg">
+                            <span>Figma</span>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill">
+                            <img src="images/icon-csp.svg">
+                            <span>Clip Studio Paint</span>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill">
+                            <img src="images/icon-blender.svg">
+                            <span>Blender</span>
+                        </div>
                     </div>
                 </div>
+                <h2>Specialties</h2>
+                <div class="grid grid-skills">
+                    <div class="skill-box-2">
+                        <div class="skill">
+                            <i class="fa-solid fa-code"></i>
+                            <span>HTML/CSS</span>
+                        </div>
+                    </div>
+                    <div class="skill-box-2">
+                        <div class="skill">
+                            <i class="fa-solid fa-file-lines"></i>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="skill-box-2">
+                        <div class="skill">
+                            <i class="fa-solid fa-crop-simple"></i>
+                            <span>Wireframing</span>
+                        </div>
+                    </div>
+                    <div class="skill-box-2">
+                        <div class="skill">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                    <div class="skill-box-2">
+                        <div class="skill">
+                            <i class="fa-solid fa-palette"></i>
+                            <span>Digital illustration</span>
+                        </div>
+                    </div>
+                    <div class="skill-box-2">
+                        <div class="skill">
+                            <i class="fa-solid fa-image"></i>
+                            <span>Composition</span>
+                        </div>
+                    </div>
+                    <div class="skill-box-2">
+                        <div class="skill">
+                            <i class="fa-solid fa-pencil"></i>
+                            <span>Concept sketching</span>
+                        </div>
+                    </div>
+                    <div class="skill-box-2">
+                        <div class="skill">
+                            <i class="fa-solid fa-clapperboard"></i>
+                            <span>Storyboarding</span>
+                        </div>
+                    </div>
+                    <div class="skill-box-2">
+                        <div class="skill">
+                            <i class="fa-solid fa-circle-user"></i>
+                            <span>Branding & identity</span>
+                        </div>
+                    </div>
+                    <div class="skill-box-2">
+                        <div class="skill">
+                            <i class="fa-solid fa-forward"></i>
+                            <span>Motion graphics</span>
+                        </div>
+                    </div>
+                </div>
+                <p>... And more!</p>
             </section>
         </main>
-        <div id="bottom-gradient">
-            &nbsp;
-        </div>
         <footer>
-            <div id="credits">
+            <div id="credits flex-container">
                 <p>&copy; 2025 TRUNSWICKED / <a href="contact.html">Contact Me</a></p>
             </div>
         </footer>

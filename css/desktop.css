@@ -4,6 +4,14 @@
     margin: 0;
 }
 
+:root {
+    --teal: #55B4A3;
+    --blue: #0077B6;
+    --orange: #D1603D;
+    --white: #fff;
+    --black: #2E2E2E;
+}
+
 html {
     font-size: 100%;
 }
