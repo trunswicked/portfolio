@@ -4,62 +4,93 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>
-            Home | Kassidy Lewis
+            Design | Kassidy Lewis
         </title>
-        <link rel="stylesheet" href="default.css">
+        <link rel="stylesheet" href="css/universal.css">
+        <link rel="stylesheet" href="css/projects.css">
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
         </style>
     </head>
     <body>
         <header>
-            <nav>
-                <ul>
-                    <li class="home-link"><a href="index.html">Home</a></li>
-                    <li><a class="nav-link" href="contact.html">Contact</a></li>
-                    <li><a class="nav-link" href="about.html">About</a></li>
-                    <li><a class="nav-link" href="sketchbook.html">Sketchbook</a></li>
-                    <li class="dropdown">
-                        <a href=" ">Portfolio &#9662;</a>
-                        <div class="dropdown-content">
-                            <a class="drop-link" href="design.html">Design</a>
-                            <a class="drop-link" href="illustration.html">Illustration</a>
-                        </div>
-                    </li>
+            <!-- Hamburger menu -->
+            <nav id="mobilemenu">
+                <div class="closebtn" onclick="closeNav()">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <ul id="mobilenav">
+                    <li>&#9654; <a href="index.html">Home</a></li>
+                    <li>&#9654; <a href="design.html">Design</a></li>
+                    <li>&#9654; <a href="illustration.html">Illustration</a></li>
+                    <li>&#9654; <a href="about.html">About</a></li>
+                    <li>&#9654; <a href="#">Contact</a></li>
                 </ul>
             </nav>
+            <div class="hamburger flex">
+                <i class="fa-solid fa-bars" onclick="openNav()"></i>
+            </div>
+            <!-- Default menu -->
         </header>
         <main>
-            <div id="gallery">
-                <div class="column">
-                    <img src="https://trello.com/1/cards/63e573f6edc831463b58778d/attachments/6574e69e6ce743ae19d65647/download/halloweenicon2.png" alt="Image 1">
-                    <img src="https://trello.com/1/cards/63e57524d104e2efe28fffdc/attachments/686c239c2bbe6b95d5862eaa/download/jun25-2-3-1-web.png" alt="Image 2">
-                    <img src="https://trello.com/1/cards/63e575a252fd71b1a826f731/attachments/64e82187c3bfa82f8df7e4bf/download/xs1.png" alt="Image 3">
+            <!-- Design projects -->
+            <section id="projects" class="container">
+                <h1 class="mt-0">Design</h1>
+                <p><em>Click images for more info!</em></p>
+                <div class="grid grid-projects pb-1">
+                    <div class="project-item">
+                        <img src="https://placehold.co/400" alt="Portfolio site screenshot">
+                        <div class="caption">
+                            <a href="#" class="link-anim"><h2>Portfolio Site</h2></a>
+                            <p>2025, HTML/CSS</p>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <img src="images/webmockup.png" alt="Clock exhibit webpage screenshot">
+                        <div class="caption">
+                            <a href="#" class="link-anim"><h2>Clock Exhibit</h2></a>
+                            <p>2024, Multimedia</p>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <img src="images/webmockup.png" alt="Webpage mockup shown on two desktop monitors">
+                        <div class="caption">
+                            <a href="page-mockup.html" class="link-anim"><h2>Page Mockup</h2></a>
+                            <p>2024, UI/UX Design</p>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <img src="https://placehold.co/400" alt="Fantasy map screenshot">
+                        <div class="caption">
+                            <a href="#" class="link-anim"><h2>Fantasy Map</h2></a>
+                            <p>2024, UI/UX Design</p>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <img src="https://placehold.co/400" alt="Logo of Alesco Design Solutions">
+                        <div class="caption">
+                            <a href="#" class="link-anim"><h2>Alesco Logos</h2></a>
+                            <p>2024, Branding & Identity</p>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <img src="https://placehold.co/400" alt="A social media graphic titled Commissions">
+                        <div class="caption">
+                            <a href="#" class="link-anim"><h2>Social Media Graphics</h2></a>
+                            <p>2024-2025, Graphic Design</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="column">
-                    <img src="https://trello.com/1/cards/612748cc0f7dc245c065c8df/attachments/65542e782c71afbb90b60635/download/naga_gaia_half.png" alt="Image 1">
-                    <img src="https://trello.com/1/cards/63e573f6edc831463b58778d/attachments/6574e69e6ce743ae19d65647/download/halloweenicon2.png" alt="Image 2">
-                    <img src="https://trello.com/1/cards/612748b5e288c95025e7b62b/attachments/681d199b4e8b903c81720a07/download/chibi_sarkises1.png" alt="Image 3">
-                </div>
-                <div class="column">
-                    <img src="https://trello.com/1/cards/63e57524d104e2efe28fffdc/attachments/686c239c2bbe6b95d5862eaa/download/jun25-2-3-1-web.png" alt="Image 1">
-                    <img src="https://trello.com/1/cards/63e575a252fd71b1a826f731/attachments/64e82187c3bfa82f8df7e4bf/download/xs1.png" alt="Image 2">
-                    <img src="https://trello.com/1/cards/612748cc0f7dc245c065c8df/attachments/65542e782c71afbb90b60635/download/naga_gaia_half.png" alt="Image 3">
-                </div>
-                <div class="column">
-                    <img src="https://trello.com/1/cards/63e575a252fd71b1a826f731/attachments/64e82187c3bfa82f8df7e4bf/download/xs1.png" alt="Image 1">
-                    <img src="https://trello.com/1/cards/612748b5e288c95025e7b62b/attachments/681d199b4e8b903c81720a07/download/chibi_sarkises1.png" alt="Image 2">
-                    <img src="https://trello.com/1/cards/63e57524d104e2efe28fffdc/attachments/686c239c2bbe6b95d5862eaa/download/jun25-2-3-1-web.png" alt="Image 3">
-                </div>
-            </div>
+            </section>
         </main>
-        <div id="bottom-gradient">
-            &nbsp;
-        </div>
+        <!-- Footer -->
         <footer>
-            <div id="credits">
-                <p>&copy; 2025 TRUNSWICKED / <a href="contact.html">Contact Me</a></p>
-            </div>
+            <address>
+                <p>&copy; 2025 TRUNSWICKED / <a href="contact.html" class="link-anim">Contact Me</a></p>
+            </address>
         </footer>
+        <!-- Scripts -->
+        <script src="https://kit.fontawesome.com/f3040639fe.js" crossorigin="anonymous"></script>
+        <script src="js/default.js"></script>
     </body>
 </html>

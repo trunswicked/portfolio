@@ -4,27 +4,44 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>
-            About | Kassidy Lewis
+            About Me | Kassidy Lewis
         </title>
+        <link rel="stylesheet" href="css/universal.css">
         <link rel="stylesheet" href="css/about.css">
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
         </style>
-        <script src="https://kit.fontawesome.com/f3040639fe.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
-            <!-- none -->
+            <!-- Hamburger menu -->
+            <nav id="mobilemenu">
+                <div class="closebtn" onclick="closeNav()">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <ul id="mobilenav">
+                    <li>&#9654; <a href="index.html">Home</a></li>
+                    <li>&#9654; <a href="design.html">Design</a></li>
+                    <li>&#9654; <a href="illustration.html">Illustration</a></li>
+                    <li>&#9654; <a href="about.html">About</a></li>
+                    <li>&#9654; <a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger flex">
+                <i class="fa-solid fa-bars" onclick="openNav()"></i>
+            </div>
+            <!-- Default menu -->
         </header>
-        <main class="container">
-            <section id="about-main">
-                <div class="arrow">
+        <main>
+            <!-- About (Main) -->
+            <section id="about-main" class="container mt-0 intro">
+                <div class="more-arrow">
                     <span>More &#9660;</span>
                 </div>
                 <div class="grid grid-about">
-                    <img src="images/portrait.png" class="about-img">
-                    <div class="about-h h-underline">
-                        <h1>Hi there!</h1>
+                    <img src="images/portrait.png" alt="Portrait of Kassidy Lewis">
+                    <div class="flex about-h">
+                        <h1 class="mb-0">Hi there!</h1>
                     </div>
                     <div class="about-desc">
                         <p>I'm Kassidy, a self-taught illustrator & designer with a love for storytelling, colorful characters, and the natural environment. When I'm not seated at my work desk, I'm always searching for something new to spark my creativity.</p>
@@ -32,64 +49,73 @@
                     </div>
                 </div>
             </section>
-            <section id="education">
-                <h1 class="h-underline">Education</h1>
-                <h2 class="m-none-b">Arizona State University</h2>
-                <strong>BS in Graphic Design</strong>
-                <p class="m-none-t">2020 - 2025, graduated May 2025 <i class="fa-solid fa-graduation-cap"></i></p>
-                <h2 class="m-none-b">Huntington University Arizona</h2>
-                <strong>BS in Animation</strong>
-                <p class="m-none-t">2018 - 2020, transferred</p>
+            <!-- Education -->
+            <section id="education" class="container-2">
+                <div class="container">
+                    <h1>Education</h1>
+                    <div id="ASU">
+                        <h2>Arizona State University</h2>
+                        <b>BS in Graphic Design</b>
+                        <p>2020 - 2025, graduated May 2025 <i class="fa-solid fa-graduation-cap"></i></p>
+                    </div>
+                    <hr>
+                    <div id="HUA">
+                        <h2>Huntington University Arizona</h2>
+                        <b>BS in Animation</b>
+                        <p>2018 - 2020, transferred</p>
+                    </div>
+                </div>
             </section>
-            <section id="skills" class="m-top">
-                <h1 class="h-underline">Skills</h1>
+            <!-- Skills -->
+            <section id="skills" class="container">
+                <h1>Skills</h1>
                 <h2>Tools of the Trade</h2>
-                <div class="grid grid-skills">
+                <div class="grid grid-skills pb-1">
                     <div class="skill-box">
                         <div class="skill">
-                            <img src="images/icon-illustrator.svg">
+                            <img src="images/icon-illustrator.svg" alt="Adobe Illustrator logo">
                             <span>Illustrator</span>
                         </div>
                     </div>
                     <div class="skill-box">
                         <div class="skill">
-                            <img src="images/icon-indesign.svg">
+                            <img src="images/icon-indesign.svg" alt="Adobe inDesign logo">
                             <span>inDesign</span>
                         </div>
                     </div>
                     <div class="skill-box">
                         <div class="skill">
-                            <img src="images/icon-photoshop.svg">
+                            <img src="images/icon-photoshop.svg" alt="Adobe Photoshop logo">
                             <span>Photoshop</span>
                         </div>
                     </div>
                     <div class="skill-box">
                         <div class="skill">
-                            <img src="images/icon-ae.svg">
+                            <img src="images/icon-ae.svg" alt="Adobe After Effects logo">
                             <span>After Effects</span>
                         </div>
                     </div>
                     <div class="skill-box">
                         <div class="skill">
-                            <img src="images/icon-xd.svg">
+                            <img src="images/icon-xd.svg" alt="Adobe XD logo">
                             <span>Adobe XD</span>
                         </div>
                     </div>
                     <div class="skill-box">
                         <div class="skill">
-                            <img src="images/icon-figma.svg">
+                            <img src="images/icon-figma.svg" alt="Figma logo">
                             <span>Figma</span>
                         </div>
                     </div>
                     <div class="skill-box">
                         <div class="skill">
-                            <img src="images/icon-csp.svg">
+                            <img src="images/icon-csp.svg" alt="Clip Studio Paint logo">
                             <span>Clip Studio Paint</span>
                         </div>
                     </div>
                     <div class="skill-box">
                         <div class="skill">
-                            <img src="images/icon-blender.svg">
+                            <img src="images/icon-blender.svg" alt="Blender logo">
                             <span>Blender</span>
                         </div>
                     </div>
@@ -159,11 +185,22 @@
                 </div>
                 <p>... And more!</p>
             </section>
+            <!-- Why Me? -->
+            <section id="whyme" class="container-2 mb-0">
+                <div class="container">
+                    <h1>Why me?</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                </div>
+            </section>
         </main>
+        <!-- Footer -->
         <footer>
-            <div id="credits flex-container">
-                <p>&copy; 2025 TRUNSWICKED / <a href="contact.html">Contact Me</a></p>
-            </div>
+            <address>
+                <p>&copy; 2025 TRUNSWICKED / <a href="contact.html" class="link-anim">Contact Me</a></p>
+            </address>
         </footer>
+        <!-- Scripts -->
+        <script src="https://kit.fontawesome.com/f3040639fe.js" crossorigin="anonymous"></script>
+        <script src="js/default.js"></script>
     </body>
 </html>

@@ -1,0 +1,37 @@
+/* Home page */
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#hero {
+    background: linear-gradient(-45deg, var(--teal), var(--orange));
+    background-size: 300% 100%;
+    animation: gradient 5s ease infinite;
+    padding: 2rem 0;
+}
+
+#hero h1 {
+    font-size: 5rem;
+}
+
+#hero img {
+    margin: 1rem 0;
+    transition: 0.3s;
+}
+
+#hero img:hover {
+    transform: rotateY(180deg);
+}
+
+#home-intro {
+    background-color: var(--white);
+}

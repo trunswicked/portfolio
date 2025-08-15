@@ -1,0 +1,203 @@
+/* Universal styles */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --teal: #39D0B5;
+    --orange: #FDCC77;
+    --white: #fff;
+    --black: #2E2E2E;
+    --grey: rgba(0, 0, 0, 0.1);
+}
+
+html {
+    font: normal 14px "Montserrat", "Trebuchet MS", sans-serif;
+}
+
+body {
+    color: var(--black);
+    background-color: var(--white);
+}
+
+/* Hamburger menu */
+
+.hamburger {
+    padding: 1.25rem;
+    justify-content: end;
+}
+
+.hamburger i {
+    font-size: 1.75rem;
+    transition: 0.3s;
+}
+
+.hamburger i:hover {
+    color: var(--teal);
+}
+
+#mobilemenu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: var(--teal);
+    font-size: 1.5rem;
+    overflow: hidden;
+    transition: width 0.3s;
+}
+
+#mobilemenu ul {
+    margin: 3.5rem 0;
+    padding-left: 1.75rem;
+    list-style: none;
+    width: 250px;
+}
+
+#mobilemenu li {
+    padding: 0.25rem 0;
+}
+
+#mobilemenu li a {
+    color: var(--black);
+    transition: 0.3s;
+}
+
+#mobilemenu li a:hover {
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1.25rem;
+    font-size: 1.75rem;
+}
+
+/* Link styles */
+
+.link-anim {
+    color: var(--teal);
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.link-anim::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: var(--teal);
+    transition: width 0.3s;
+}
+
+.link-anim:hover::after {
+    width: 100%;
+}
+
+/* Text styles */
+
+h1 {
+    font: normal 3.5rem "Josefin Sans", Georgia, sans-serif;
+    margin: 1rem 0;
+    border-bottom: 1px solid var(--black);
+}
+
+h2 {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+p {
+    margin: 1rem 0;
+    line-height: 150%;
+}
+
+hr {
+    margin: 1.25rem 0;
+    border-top: 1px dashed var(--black);
+}
+
+/* Image styles */
+
+img {
+    max-width: 100%;
+}
+
+/* Margins & Utility */
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.pb-1 {
+    padding-bottom: 1.25rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Animations */
+
+@keyframes point {
+    0% { transform: translateY(0) }
+    25% { transform: translateY(-5px) }
+    50% { transform: translateY(-5px) }
+    100% { transform: translateY(0) }
+}
+
+@keyframes shrink {
+    0% { transform: scale(1) }
+    50% { transform: scale(0.9) }
+    100% { transform: scale(1) }
+}
+
+/* Containers, Flex & Grid */
+
+section {
+    margin: 3.5rem 0;
+}
+
+.intro {
+    min-height: 90vh;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.container-2 {
+    background-color: var(--grey);
+    padding: 1rem 0;
+}
+
+.grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.flex {
+    display: flex;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--black);
+    color: white;
+    padding: 1.25rem;
+    text-align: center;
+}

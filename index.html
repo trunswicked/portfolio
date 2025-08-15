@@ -6,53 +6,54 @@
         <title>
             Home | Kassidy Lewis
         </title>
-        <link rel="stylesheet" href="default.css">
+        <link rel="stylesheet" href="css/universal.css">
+        <link rel="stylesheet" href="css/home.css">
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
         </style>
     </head>
     <body>
         <header>
-            <nav>
-                <ul>
-                    <li class="home-link"><a href="home.html">Home</a></li>
-                    <li><a class="nav-link" href="contact.html">Contact</a></li>
-                    <li><a class="nav-link" href="about.html">About</a></li>
-                    <li><a class="nav-link" href="sketchbook.html">Sketchbook</a></li>
-                    <li class="dropdown">
-                        <a href=" ">Portfolio &#9662;</a>
-                        <div class="dropdown-content">
-                            <a class="drop-link" href="design.html">Design</a>
-                            <a class="drop-link" href="illustration.html">Illustration</a>
-                        </div>
-                    </li>
+            <!-- Hamburger menu -->
+            <nav id="mobilemenu">
+                <div class="closebtn" onclick="closeNav()">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <ul id="mobilenav">
+                    <li>&#9654; <a href="index.html">Home</a></li>
+                    <li>&#9654; <a href="design.html">Design</a></li>
+                    <li>&#9654; <a href="illustration.html">Illustration</a></li>
+                    <li>&#9654; <a href="about.html">About</a></li>
+                    <li>&#9654; <a href="#">Contact</a></li>
                 </ul>
             </nav>
+            <div class="hamburger flex" style="background-color: var(--black); color: var(--white);">
+                <i class="fa-solid fa-bars" onclick="openNav()"></i>
+            </div>
+            <!-- Default menu -->
         </header>
         <main>
-            <div id="intro">
-                <div class="intro-mask">
-                    <div class="gradient">&nbsp;</div>
+            <section id="hero" class="intro mt-0">
+                <div class="container">
+                    <h1 class="mt-0">Kassidy Lewis</h1>
+                    <h2>UI/UX, Graphic Design, Illustration</h2>
+                    <img src="images/logo.svg">
                 </div>
-                <h2 class="tagline">UI/UX, Graphic Design, Illustration</h2>
-            </div>
-            <div class="wrapper">
-                <div class="scroll-gallery">
-                    <img src="https://trello.com/1/cards/63e573f6edc831463b58778d/attachments/6574e69e6ce743ae19d65647/download/halloweenicon2.png">
-                    <img src="https://trello.com/1/cards/63e57524d104e2efe28fffdc/attachments/686c239c2bbe6b95d5862eaa/download/jun25-2-3-1-web.png">
-                    <img src="https://trello.com/1/cards/63e575a252fd71b1a826f731/attachments/64e82187c3bfa82f8df7e4bf/download/xs1.png">
-                    <img src="https://trello.com/1/cards/63e57524d104e2efe28fffdc/attachments/686c239c2bbe6b95d5862eaa/download/jun25-2-3-1-web.png">
-                    <img src="https://trello.com/1/cards/63e57524d104e2efe28fffdc/attachments/686c239c2bbe6b95d5862eaa/download/jun25-2-3-1-web.png">
+            </section>
+            <section id="home-intro">
+                <div class="container">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                 </div>
-            </div>
+            </section>
         </main>
-        <div id="bottom-gradient">
-            &nbsp;
-        </div>
+        <!-- Footer -->
         <footer>
-            <div id="credits">
-                <p>&copy; 2025 TRUNSWICKED / <a href="contact.html">Contact Me</a></p>
-            </div>
+            <address>
+                <p>&copy; 2025 TRUNSWICKED / <a href="contact.html" class="link-anim">Contact Me</a></p>
+            </address>
         </footer>
+        <!-- Scripts -->
+        <script src="https://kit.fontawesome.com/f3040639fe.js" crossorigin="anonymous"></script>
+        <script src="js/default.js"></script>
     </body>
 </html>

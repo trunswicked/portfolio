@@ -1,101 +1,10 @@
-/* Universal styles */
-* {
-    box-sizing: border-box;
-}
-
-:root {
-    --teal: #55B4A3;
-    --blue: #0077B6;
-    --orange: #D1603D;
-    --white: #fff;
-    --black: #2E2E2E;
-}
-
-html {
-    font-size: 100%;
-}
-
-body {
-    font: normal 14px "Montserrat", Georgia, sans-serif;
-    color: var(--black);
-    line-height: 1.5;
-    background-color: var(--white);
-    margin: 0;
-}
-
-a {
-    color: var(--teal);
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-h1 {
-    font: normal 3rem "Josefin Sans", Georgia, sans-serif;
-    margin: 0 0 0.25rem;
-}
-
-h2 {
-    margin-bottom: 0.25rem;
-    line-height: normal;
-}
-
-img {
-    max-width: 100%;
-    display: block;
-}
-
-section {
-    margin: 2rem 0;
-}
-
-.container {
-    width: 90%;
-    margin: auto;
-}
-
-.grid {
-    display: grid;
-    gap: 0.75rem;
-    margin: 0.75rem 0;
-}
-
-.flex-container {
-    display: flex;
-}
-
 /* About */
-
-#about-main {
-    min-height: 100vh;
-    margin: 2rem 0 0;
-}
 
 .grid-about {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, max-content);
-}
-
-.arrow {
-    position: absolute;
-    font-size: 1.5rem;
-    bottom: 1rem;
-    right: 1rem;
-    animation: point 2s infinite;
-}
-
-@keyframes point {
-    0% { transform: translateY(0) }
-    25% { transform: translateY(-5px) }
-    50% { transform: translateY(-5px) }
-    100% { transform: translateY(0) }
 }
 
 .about-h {
-    display: flex;
     align-items: flex-end;
 }
 
@@ -103,34 +12,39 @@ section {
     grid-column: 1 / 3;
 }
 
-#education {
-    margin: 0 0 3.5rem;
+.more-arrow {
+    position: absolute;
+    font-size: 1.5rem;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    animation: point 2s infinite;
 }
 
-#skills {
-    margin: 3.5rem 0 2rem;
-}
+/* Skills */
 
 .grid-skills {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.h-underline {
-    border-bottom: 1px solid var(--black);
+.skill-box, .skill-box-2 {
+    padding: 1.25rem;
+    overflow: hidden;
+    height: 4rem;
+    border-image-source: url(/images/border.png);
+    border-image-width: 75% auto auto 90%;
+    border-image-slice: 0 5 5 0;
 }
 
-.skill-box, .skill-box-2 {
-    padding: 1rem;
-    overflow: hidden;
-    height: 3.5rem;
+.skill-box:hover, .skill-box-2:hover {
+    animation: shrink 1s;
 }
 
 .skill-box {
-    background-color: var(--teal);
+    background-color: var(--orange);
 }
 
 .skill-box-2 {
-    background-color: rgba(0, 0, 0, 0.15);
+    background-color: var(--grey);
 }
 
 .skill {
@@ -143,11 +57,4 @@ section {
 
 .skill img {
     height: 1.5rem;
-}
-
-footer {
-    background-color: var(--black);
-    color: white;
-    padding: 2rem;
-    text-align: center;
 }
