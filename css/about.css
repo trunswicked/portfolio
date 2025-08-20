@@ -33,10 +33,11 @@
     border-image-source: url(/images/border.png);
     border-image-width: 75% auto auto 90%;
     border-image-slice: 0 5 5 0;
+    transition: 0.3s;
 }
 
 .skill-box:hover, .skill-box-2:hover {
-    animation: shrink 1s;
+    transform: scale(0.9);
 }
 
 .skill-box {
@@ -44,7 +45,7 @@
 }
 
 .skill-box-2 {
-    background-color: var(--grey);
+    background-color: var(--faded);
 }
 
 .skill {

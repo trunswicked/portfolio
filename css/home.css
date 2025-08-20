@@ -1,37 +1,63 @@
 /* Home page */
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+body {
+    background-color: var(--teal);
 }
 
-#hero {
-    background: linear-gradient(-45deg, var(--teal), var(--orange));
-    background-size: 300% 100%;
-    animation: gradient 5s ease infinite;
-    padding: 2rem 0;
-}
-
-#hero h1 {
-    font-size: 5rem;
+.hero-text {
+    margin: auto;
+    padding: 1.25rem 0;
+    text-align: center;
 }
 
 #hero img {
-    margin: 1rem 0;
-    transition: 0.3s;
+    width: 80%;
 }
 
-#hero img:hover {
-    transform: rotateY(180deg);
+.more-arrow {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    bottom: 2rem;
+    animation: point 2s infinite;
+}
+
+.gradient {
+    background: linear-gradient(0deg, var(--white), var(--teal));
+    height: 100px;
+}
+
+#home-intro, #work {
+    padding: 2.5rem 0;
 }
 
 #home-intro {
     background-color: var(--white);
+}
+
+#work {
+    background-color: var(--faded);
+}
+
+#home-intro a {
+    font-size: 1.5rem;
+}
+
+.gallery {
+    flex-flow: row wrap;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.gallery-img {
+    flex: 1 0 calc(50% - 1rem);
+    height: 200px;
+}
+
+.gallery-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
 }

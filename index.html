@@ -15,43 +15,68 @@
     <body>
         <header>
             <!-- Hamburger menu -->
-            <nav id="mobilemenu">
-                <div class="closebtn" onclick="closeNav()">
-                    <i class="fa-solid fa-xmark"></i>
-                </div>
-                <ul id="mobilenav">
-                    <li>&#9654; <a href="index.html">Home</a></li>
-                    <li>&#9654; <a href="design.html">Design</a></li>
-                    <li>&#9654; <a href="illustration.html">Illustration</a></li>
-                    <li>&#9654; <a href="about.html">About</a></li>
-                    <li>&#9654; <a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="hamburger flex" style="background-color: var(--black); color: var(--white);">
-                <i class="fa-solid fa-bars" onclick="openNav()"></i>
-            </div>
+            <custom-header-m></custom-header-m>
             <!-- Default menu -->
         </header>
         <main>
-            <section id="hero" class="intro mt-0">
-                <div class="container">
-                    <h1 class="mt-0">Kassidy Lewis</h1>
-                    <h2>UI/UX, Graphic Design, Illustration</h2>
+            <section id="hero" class="intro m-0">
+                <div class="container hero-text">
                     <img src="images/logo.svg">
+                    <p>Hi there! My name is</p>
+                    <h1 class="mt-0">Kassidy Lewis</h1>
+                    <h2>Graphic Designer and Illustrator</h2>
                 </div>
+                <span class="more-arrow">More <i class="fa-solid fa-caret-down"></i></span>
             </section>
-            <section id="home-intro">
+            <section id="home-intro" class="m-0">
                 <div class="container">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    <h1>The Artist</h1>
+                    <p>I'm Kassidy, a self-taught illustrator & designer with a love for storytelling, colorful characters, and the natural environment. When I'm not seated at my work desk, I'm always searching for something new to spark my creativity.</p>
+                    <p><a href="about.html">More about me</a> <i class="fa-solid fa-caret-right"></i></p>
                 </div>
             </section>
+            <section id="work" class="m-0">
+                <div class="container">
+                    <h1>Work</h1>
+                    <h2>UI/UX, Graphic Design</h2>
+                    <p><em>Click to view project page!</em></p>
+                    <div class="gallery flex">
+                        <div class="gallery-img">
+                            <a href="page-mockup.html"><img src="images/webmockup.png" class="img-h"></a>
+                        </div>
+                        <div class="gallery-img">
+                            <a href="page-mockup.html"><img src="images/webmockup.png" class="img-h"></a>
+                        </div>
+                        <div class="gallery-img">
+                            <a href="page-mockup.html"><img src="images/webmockup.png" class="img-h"></a>
+                        </div>
+                        <div class="gallery-img">
+                            <a href="page-mockup.html"><img src="images/webmockup.png" class="img-h"></a>
+                        </div>
+                    </div>
+                    <h2>Illustration</h2>
+                    <p><em>Click to view project page!</em></p>
+                    <div class="gallery flex">
+                        <div class="gallery-img">
+                            <a href="page-mockup.html"><img src="images/webmockup.png" class="img-h"></a>
+                        </div>
+                        <div class="gallery-img">
+                            <a href="page-mockup.html"><img src="images/webmockup.png" class="img-h"></a>
+                        </div>
+                        <div class="gallery-img">
+                            <a href="page-mockup.html"><img src="images/webmockup.png" class="img-h"></a>
+                        </div>
+                        <div class="gallery-img">
+                            <a href="page-mockup.html"><img src="images/webmockup.png" class="img-h"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Get in Touch -->
+            <get-in-touch></get-in-touch>
         </main>
         <!-- Footer -->
-        <footer>
-            <address>
-                <p>&copy; 2025 TRUNSWICKED / <a href="contact.html" class="link-anim">Contact Me</a></p>
-            </address>
-        </footer>
+        <custom-footer></custom-footer>
         <!-- Scripts -->
         <script src="https://kit.fontawesome.com/f3040639fe.js" crossorigin="anonymous"></script>
         <script src="js/default.js"></script>

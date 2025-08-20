@@ -15,21 +15,7 @@
     <body>
         <header>
             <!-- Hamburger menu -->
-            <nav id="mobilemenu">
-                <div class="closebtn" onclick="closeNav()">
-                    <i class="fa-solid fa-xmark"></i>
-                </div>
-                <ul id="mobilenav">
-                    <li>&#9654; <a href="index.html">Home</a></li>
-                    <li>&#9654; <a href="design.html">Design</a></li>
-                    <li>&#9654; <a href="illustration.html">Illustration</a></li>
-                    <li>&#9654; <a href="about.html">About</a></li>
-                    <li>&#9654; <a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="hamburger flex">
-                <i class="fa-solid fa-bars" onclick="openNav()"></i>
-            </div>
+            <custom-header-m></custom-header-m>
             <!-- Default menu -->
         </header>
         <main>
@@ -82,13 +68,11 @@
                     </div>
                 </div>
             </section>
+            <!-- Get in Touch -->
+            <get-in-touch></get-in-touch>
         </main>
         <!-- Footer -->
-        <footer>
-            <address>
-                <p>&copy; 2025 TRUNSWICKED / <a href="contact.html" class="link-anim">Contact Me</a></p>
-            </address>
-        </footer>
+        <custom-footer></custom-footer>
         <!-- Scripts -->
         <script src="https://kit.fontawesome.com/f3040639fe.js" crossorigin="anonymous"></script>
         <script src="js/default.js"></script>

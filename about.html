@@ -15,28 +15,14 @@
     <body>
         <header>
             <!-- Hamburger menu -->
-            <nav id="mobilemenu">
-                <div class="closebtn" onclick="closeNav()">
-                    <i class="fa-solid fa-xmark"></i>
-                </div>
-                <ul id="mobilenav">
-                    <li>&#9654; <a href="index.html">Home</a></li>
-                    <li>&#9654; <a href="design.html">Design</a></li>
-                    <li>&#9654; <a href="illustration.html">Illustration</a></li>
-                    <li>&#9654; <a href="about.html">About</a></li>
-                    <li>&#9654; <a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="hamburger flex">
-                <i class="fa-solid fa-bars" onclick="openNav()"></i>
-            </div>
+            <custom-header-m></custom-header-m>
             <!-- Default menu -->
         </header>
         <main>
             <!-- About (Main) -->
             <section id="about-main" class="container mt-0 intro">
                 <div class="more-arrow">
-                    <span>More &#9660;</span>
+                    <span>More <i class="fa-solid fa-caret-down"></i></span>
                 </div>
                 <div class="grid grid-about">
                     <img src="images/portrait.png" alt="Portrait of Kassidy Lewis">
@@ -45,7 +31,7 @@
                     </div>
                     <div class="about-desc">
                         <p>I'm Kassidy, a self-taught illustrator & designer with a love for storytelling, colorful characters, and the natural environment. When I'm not seated at my work desk, I'm always searching for something new to spark my creativity.</p>
-                        <p>I've also worked with 30+ partners from 2018-2024, which includes individual clients and local businesses. My ultimate goal is to provide the tools entrepreneurs need to market themselves, and to deliver artistic product(s) to be enjoyed for years to come.</p>
+                        <p>I've also worked with 30+ partners from 2018-2024, which includes individual clients and local business representatives. My ultimate goal is to provide the tools entrepreneurs need to market themselves, and to deliver artistic product(s) to be enjoyed for years to come.</p>
                     </div>
                 </div>
             </section>
@@ -192,13 +178,11 @@
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                 </div>
             </section>
+            <!-- Get in Touch -->
+             <get-in-touch></get-in-touch>
         </main>
         <!-- Footer -->
-        <footer>
-            <address>
-                <p>&copy; 2025 TRUNSWICKED / <a href="contact.html" class="link-anim">Contact Me</a></p>
-            </address>
-        </footer>
+        <custom-footer></custom-footer>
         <!-- Scripts -->
         <script src="https://kit.fontawesome.com/f3040639fe.js" crossorigin="anonymous"></script>
         <script src="js/default.js"></script>
