@@ -11,12 +11,6 @@
     height: 200px;
 }
 
-.project-item img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-
 /* Caption overlay */
 
 .caption {
@@ -42,4 +36,12 @@
 
 .project-item:hover .caption {
     top: 0;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 768px) {
+    .grid-projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

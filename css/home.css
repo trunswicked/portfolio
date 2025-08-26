@@ -4,60 +4,31 @@ body {
     background-color: var(--teal);
 }
 
-.hero-text {
-    margin: auto;
-    padding: 1.25rem 0;
-    text-align: center;
-}
-
-#hero img {
+.hero-img {
     width: 80%;
 }
 
-.more-arrow {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    font-size: 1.5rem;
-    bottom: 2rem;
-    animation: point 2s infinite;
-}
-
-.gradient {
-    background: linear-gradient(0deg, var(--white), var(--teal));
-    height: 100px;
-}
-
-#home-intro, #work {
-    padding: 2.5rem 0;
-}
-
-#home-intro {
-    background-color: var(--white);
-}
-
-#work {
-    background-color: var(--faded);
-}
-
-#home-intro a {
-    font-size: 1.5rem;
-}
-
-.gallery {
+.home-gallery {
     flex-flow: row wrap;
     gap: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem 0;
 }
 
-.gallery-img {
+.gallery-item {
     flex: 1 0 calc(50% - 1rem);
     height: 200px;
 }
 
-.gallery-img img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    transition: 0.3s;
+/* Media queries */
+
+@media screen and (max-width: 767px) {
+    .gallery-item {
+        flex: 1 0 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero-img {
+        width: 40%;
+    }
 }

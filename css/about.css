@@ -13,11 +13,8 @@
 }
 
 .more-arrow {
-    position: absolute;
-    font-size: 1.5rem;
-    bottom: 1.25rem;
-    right: 1.25rem;
-    animation: point 2s infinite;
+    text-align: right;
+    justify-self: end;
 }
 
 /* Skills */
@@ -56,6 +53,20 @@
     height: 100%;
 }
 
-.skill img {
+.skill > img {
     height: 1.5rem;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 768px) {
+    .skill-box, .skill-box-2 {
+        border-image-width: 75% auto auto 93%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .grid-skills {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

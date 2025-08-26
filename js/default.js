@@ -2,21 +2,21 @@
 class CustomHeaderM extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
+            <div class="hamburger flex">
+                <i class="fa-solid fa-bars l-grey" onclick="openNav()" role="button"></i>
+            </div>
             <nav id="mobilemenu">
-                <div class="closebtn" onclick="closeNav()">
-                    <i class="fa-solid fa-xmark"></i>
+                <div class="closebtn">
+                    <i class="fa-solid fa-xmark l-mobile-nav" onclick="closeNav()" role="button"></i>
                 </div>
-                <ul id="mobilenav">
-                    <li><i class="fa-solid fa-caret-right"></i> <a href="index.html">Home</a></li>
-                    <li><i class="fa-solid fa-caret-right"></i> <a href="design.html">Design</a></li>
-                    <li><i class="fa-solid fa-caret-right"></i> <a href="illustration.html">Illustration</a></li>
-                    <li><i class="fa-solid fa-caret-right"></i> <a href="about.html">About</a></li>
-                    <li><i class="fa-solid fa-caret-right"></i> <a href="#">Contact</a></li>
+                <ul>
+                    <li><i class="fa-solid fa-caret-right"></i> <a href="index.html" class="l-mobile-nav">Home</a></li>
+                    <li><i class="fa-solid fa-caret-right"></i> <a href="design.html" class="l-mobile-nav">Design</a></li>
+                    <li><i class="fa-solid fa-caret-right"></i> <a href="illustration.html" class="l-mobile-nav">Illustration</a></li>
+                    <li><i class="fa-solid fa-caret-right"></i> <a href="about.html" class="l-mobile-nav">About</a></li>
+                    <li><i class="fa-solid fa-caret-right"></i> <a href="#" class="l-mobile-nav">Contact</a></li>
                 </ul>
             </nav>
-            <div class="hamburger flex">
-                <i class="fa-solid fa-bars" onclick="openNav()"></i>
-            </div>
             `
     }
 }
@@ -25,9 +25,9 @@ class CustomFooter extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
             <footer>
-                <div id="footer-flex" class="flex container">
-                    <p>&copy; 2025 Kassidy Lewis / <a href="contact.html" class="link-anim">Contact Me</a></p>
-                    <p><i class="fa-solid fa-caret-up"></i> <a href=" " onClick="scrollToTop()" class="link-w">Top</a></p>
+                <div class="flex j-between">
+                    <div>&copy; 2025 Kassidy Lewis / <a href="contact.html" class="link-anim">Contact Me</a></div>
+                    <div><a href="#top" onClick="scrollToTop()" class="l-mobile-nav" role="button">Top</a> <i class="fa-solid fa-caret-up"></i></div>
                 </div>
             </footer>
             `
@@ -40,7 +40,7 @@ class GetinTouch extends HTMLElement {
             <section id="getintouch">
                 <div class="container">
                     <h1>Get in Touch!</h1>
-                    <p>Think I'd be a great fit for your next project? Message me <address><a id="emailLinkID" href="">via email</a></address> or connect with me via <a href="https://www.linkedin.com/in/kassidy-lewis/">LinkedIn</a>!</p>
+                    <p class="getintouch-text">Think I'd be a great fit for your next project? Message me <address><a id="emailLinkID" href=" " class="l-grey">via email</a></address> or connect with me via <a href="https://www.linkedin.com/in/kassidy-lewis/" class="l-grey">LinkedIn</a>!</p>
                 </div>
             </section>
             `
@@ -53,7 +53,7 @@ customElements.define('custom-footer', CustomFooter)
 
 // Mobile Navigation
 function openNav() {
-    document.getElementById("mobilemenu").style.width = "250px";
+    document.getElementById("mobilemenu").style.width = "30vmax";
 }
 
 function closeNav() {

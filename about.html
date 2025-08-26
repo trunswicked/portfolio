@@ -8,22 +8,18 @@
         </title>
         <link rel="stylesheet" href="css/universal.css">
         <link rel="stylesheet" href="css/about.css">
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-        </style>
     </head>
     <body>
         <header>
+            <!-- Top anchor -->
+            <span id="top"></span>
             <!-- Hamburger menu -->
             <custom-header-m></custom-header-m>
             <!-- Default menu -->
         </header>
         <main>
             <!-- About (Main) -->
-            <section id="about-main" class="container mt-0 intro">
-                <div class="more-arrow">
-                    <span>More <i class="fa-solid fa-caret-down"></i></span>
-                </div>
+            <section class="container flex flex-column j-between pt-0 intro">
                 <div class="grid grid-about">
                     <img src="images/portrait.png" alt="Portrait of Kassidy Lewis">
                     <div class="flex about-h">
@@ -34,9 +30,10 @@
                         <p>I've also worked with 30+ partners from 2018-2024, which includes individual clients and local business representatives. My ultimate goal is to provide the tools entrepreneurs need to market themselves, and to deliver artistic product(s) to be enjoyed for years to come.</p>
                     </div>
                 </div>
+                <span class="more-arrow">More <i class="fa-solid fa-caret-down"></i></span>
             </section>
             <!-- Education -->
-            <section id="education" class="container-2">
+            <section class="container-2">
                 <div class="container">
                     <h1>Education</h1>
                     <div id="ASU">
@@ -53,7 +50,7 @@
                 </div>
             </section>
             <!-- Skills -->
-            <section id="skills" class="container">
+            <section class="container">
                 <h1>Skills</h1>
                 <h2>Tools of the Trade</h2>
                 <div class="grid grid-skills pb-1">
@@ -116,6 +113,12 @@
                     </div>
                     <div class="skill-box-2">
                         <div class="skill">
+                            <i class="fa-brands fa-bootstrap"></i>
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                    <div class="skill-box-2">
+                        <div class="skill">
                             <i class="fa-solid fa-file-lines"></i>
                             <span>JavaScript</span>
                         </div>
@@ -136,12 +139,6 @@
                         <div class="skill">
                             <i class="fa-solid fa-palette"></i>
                             <span>Digital illustration</span>
-                        </div>
-                    </div>
-                    <div class="skill-box-2">
-                        <div class="skill">
-                            <i class="fa-solid fa-image"></i>
-                            <span>Composition</span>
                         </div>
                     </div>
                     <div class="skill-box-2">
@@ -172,7 +169,7 @@
                 <p>... And more!</p>
             </section>
             <!-- Why Me? -->
-            <section id="whyme" class="container-2 mb-0">
+            <section id="whyme" class="container-2">
                 <div class="container">
                     <h1>Why me?</h1>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
