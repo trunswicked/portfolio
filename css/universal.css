@@ -47,7 +47,7 @@ body {
     justify-content: end;
 }
 
-.hamburger > i, .closebtn > i {
+.hamburger i, .closebtn i, .socmed i {
     font-size: 1.75rem;
     transition: 0.3s;
 }
@@ -66,22 +66,31 @@ body {
     transition: width 0.3s;
 }
 
-#mobilemenu > ul {
+#mobilemenu ul {
     padding-top: 3.5rem;
     padding-left: 1.25rem;
     list-style: none;
-    width: 30vmax;
+    width: 250px;
 }
 
 #mobilemenu li {
     margin: 0.5rem 0;
 }
 
-.closebtn {
+.closebtn, .socmed {
     position: absolute;
-    top: 0;
     right: 0;
     padding: 1.25rem;
+}
+
+.closebtn {
+    top: 0;
+}
+
+.socmed {
+    bottom: 0;
+    width: 250px;
+    text-align: right;
 }
 
 /* Link styles */
@@ -190,6 +199,10 @@ img {
     transform: scale(0.9);
 }
 
+.img-expand:hover {
+    cursor: pointer;
+}
+
 /* Custom elements */
 
 .more-arrow {
@@ -199,6 +212,27 @@ img {
 
 .getintouch-text {
     display: inline;
+}
+
+#lightbox {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+#lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox img {
+    max-width: 80%;
+    max-height: 80%;
 }
 
 /* Margins & Utility */

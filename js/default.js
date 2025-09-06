@@ -14,8 +14,9 @@ class CustomHeaderM extends HTMLElement {
                     <li><i class="fa-solid fa-caret-right"></i> <a href="design.html" class="l-mobile-nav">Design</a></li>
                     <li><i class="fa-solid fa-caret-right"></i> <a href="illustration.html" class="l-mobile-nav">Illustration</a></li>
                     <li><i class="fa-solid fa-caret-right"></i> <a href="about.html" class="l-mobile-nav">About</a></li>
-                    <li><i class="fa-solid fa-caret-right"></i> <a href="#" class="l-mobile-nav">Contact</a></li>
                 </ul>
+                <div class="socmed">
+                    <a href="https://www.linkedin.com/in/kassidy-lewis/"><i class="fa-brands fa-linkedin l-mobile-nav"></i></a>
             </nav>
             `
     }
@@ -26,7 +27,7 @@ class CustomFooter extends HTMLElement {
         this.innerHTML = `
             <footer>
                 <div class="flex j-between">
-                    <div>&copy; 2025 Kassidy Lewis / <a href="contact.html" class="link-anim">Contact Me</a></div>
+                    <div>&copy; 2025 Kassidy Lewis / <a href="https://www.linkedin.com/in/kassidy-lewis/" class="link-anim">LinkedIn</a></div>
                     <div><a href="#top" onClick="scrollToTop()" class="l-mobile-nav" role="button">Top</a> <i class="fa-solid fa-caret-up"></i></div>
                 </div>
             </footer>
@@ -53,12 +54,34 @@ customElements.define('custom-footer', CustomFooter)
 
 // Mobile Navigation
 function openNav() {
-    document.getElementById("mobilemenu").style.width = "30vmax";
+    document.getElementById("mobilemenu").style.width = "250px";
 }
 
 function closeNav() {
     document.getElementById("mobilemenu").style.width = "0";
 }
+
+// Lightbox
+const lightbox = document.createElement('div')
+lightbox.id = 'lightbox'
+document.body.appendChild(lightbox)
+
+const images = document.querySelectorAll(".img-expand")
+images.forEach(image => {
+    image.addEventListener('click', e => {
+        lightbox.classList.add('active')
+        const img = document.createElement('img')
+        img.src = image.src
+        while (lightbox.firstChild) {
+            lightbox.removeChild(lightbox.firstChild)
+        }
+        lightbox.appendChild(img)
+    })
+})
+
+lightbox.addEventListener('click', e=> {
+    lightbox.classList.remove('active')
+})
 
 // Email
 const emailForm = document.getElementById("emailLinkID");
