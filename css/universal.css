@@ -19,12 +19,12 @@
 
 @font-face {
   font-family: "Josefin Sans";
-  src: url(css/JosefinSans.tff);
+  src: url(JosefinSans.tff);
 }
 
 @font-face {
   font-family: Montserrat;
-  src: url(css/Montserrat.tff);
+  src: url(Montserrat.tff);
 }
 
 /* Universal styles */
