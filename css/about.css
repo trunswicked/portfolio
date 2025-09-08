@@ -5,7 +5,7 @@
 }
 
 .about-h {
-    align-items: flex-end;
+    align-self: flex-end;
 }
 
 .about-desc, .more-arrow {

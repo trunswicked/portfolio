@@ -1,4 +1,19 @@
 // Header & Footer
+class CustomHeader extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+            <nav id="menu">
+                <ul class="flex">
+                    <li style="margin-right: auto;"><a href="index.html" class="home-link">Home</a></li>
+                    <li><a href="design.html" class="menu-link link-anim">Design</a></li>
+                    <li><a href="illustration.html" class="menu-link link-anim">Illustration</a></li>
+                    <li><a href="about.html" class="menu-link link-anim">About</a></li>
+                </ul>
+            </nav>
+            `
+    }
+}
+
 class CustomHeaderM extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
@@ -41,20 +56,21 @@ class GetinTouch extends HTMLElement {
             <section id="getintouch">
                 <div class="container">
                     <h1>Get in Touch!</h1>
-                    <p class="getintouch-text">Think I'd be a great fit for your next project? Message me <address><a id="emailLinkID" href=" " class="l-grey">via email</a></address> or connect with me via <a href="https://www.linkedin.com/in/kassidy-lewis/" class="l-grey">LinkedIn</a>!</p>
+                    <p class="getintouch-text">Think I'd be a great fit for your next project? Message me <address><a id="emailLinkID" href=" ">via email</a></address> or connect with me via <a href="https://www.linkedin.com/in/kassidy-lewis/">LinkedIn</a>!</p>
                 </div>
             </section>
             `
     }
 }
 
+customElements.define('custom-header', CustomHeader)
 customElements.define('custom-header-m', CustomHeaderM)
 customElements.define('get-in-touch', GetinTouch)
 customElements.define('custom-footer', CustomFooter)
 
 // Mobile Navigation
 function openNav() {
-    document.getElementById("mobilemenu").style.width = "250px";
+    document.getElementById("mobilemenu").style.width = "200px";
 }
 
 function closeNav() {

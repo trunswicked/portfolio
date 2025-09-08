@@ -12,38 +12,22 @@
     grid-area: 1 / 1 / 2 / 4;
 }
 
-.tools, .short-desc {
-    padding: 1.25rem;
-}
-
-.tools {
-    grid-area: 2 / 3 / 3 / 4;
-    align-items: center;
-    justify-content: center;
-}
-
-.tools p {
-    margin: 0.5rem 0 0 0;
-}
-
-.project-icon {
-    font-size: 3rem;
-}
-
 .short-desc {
-    grid-area: 2 / 1 / 3 / 3;
+    grid-area: 3 / 1 / 4 / 4;
+    padding: 1.25rem;
     background-color: var(--orange);
+    align-items: center;
     border-image-source: url(/images/border.png);
-    border-image-width: 80% auto auto 85%;
+    border-image-width: 80% auto auto 94%;
     border-image-slice: 0 5 5 0;
 }
 
 .image-second {
-    grid-area: 3 / 1 / 4 / 2;
+    grid-area: 2 / 1 / 3 / 3;
 }
 
 .image-third {
-    grid-area: 3 / 2 / 4 / 4;
+    grid-area: 2 / 3 / 3 / 4;
 }
 
 .image-fourth {
