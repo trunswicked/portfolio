@@ -14,12 +14,14 @@
 
 .more-arrow {
     text-align: center;
+    margin-top: 2rem;
 }
 
 /* Skills */
 
 .grid-skills {
     grid-template-columns: repeat(2, 1fr);
+    padding-top: 0.5rem;
 }
 
 .skill-box, .skill-box-2 {
@@ -52,7 +54,7 @@
     height: 100%;
 }
 
-.skill > img {
+.skill img {
     height: 1.5rem;
 }
 

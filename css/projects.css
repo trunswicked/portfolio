@@ -2,7 +2,7 @@
 
 .grid-projects {
     grid-template-columns: 1fr;
-    gap: 1rem;
+    padding: 1.5rem 0;
 }
 
 .project-item {

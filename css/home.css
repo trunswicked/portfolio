@@ -5,13 +5,14 @@ body {
 }
 
 .hero-img {
-    width: 80%;
+    width: 40%;
+    margin: 0 auto;
 }
 
 .home-gallery {
     flex-flow: row wrap;
     gap: 1rem;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
 }
 
 .gallery-item {
@@ -27,8 +28,8 @@ body {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 576px) {
     .hero-img {
-        width: 40%;
+        width: 80%;
     }
 }

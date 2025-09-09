@@ -4,10 +4,6 @@
     grid-template-columns: 2fr 1fr 2fr;
 }
 
-.grid-project-1 img {
-    transition: 0.3s;
-}
-
 .image-first {
     grid-area: 1 / 1 / 2 / 4;
 }
@@ -46,13 +42,19 @@ figure img {
 
 figcaption {
     text-align: center;
-    color: rgba(0, 0, 0, 0.5);
+    color: var(--grey);
 }
 
 /* Media queries */
 
 @media screen and (min-width: 768px) {
-    .tools {
-        border-image-width: 80% auto auto 90%;
+    .short-desc {
+        border-image-width: 80% auto auto 96%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .short-desc {
+        border-image-width: 80% auto auto 97%;
     }
 }
