@@ -26,10 +26,10 @@ class CustomHeaderM extends HTMLElement {
                         <button class="l-nav" onClick="closeNav()"><i class="fa-solid fa-xmark"></i></button>
                     </div>
                     <ul>
-                        <li class="mt-0"><i class="fa-solid fa-caret-right"></i><a href="index.html" class="l-nav">Home</a></li>
-                        <li><i class="fa-solid fa-caret-right"></i><a href="design.html" class="l-nav">Design</a></li>
-                        <li><i class="fa-solid fa-caret-right"></i><a href="illustration.html" class="l-nav">Illustration</a></li>
-                        <li><i class="fa-solid fa-caret-right"></i><a href="about.html" class="l-nav">About</a></li>
+                        <li class="mt-0"><i class="fa-solid fa-caret-right"></i> <a href="index.html" class="l-nav">Home</a></li>
+                        <li><i class="fa-solid fa-caret-right"></i> <a href="design.html" class="l-nav">Design</a></li>
+                        <li><i class="fa-solid fa-caret-right"></i> <a href="illustration.html" class="l-nav">Illustration</a></li>
+                        <li><i class="fa-solid fa-caret-right"></i> <a href="about.html" class="l-nav">About</a></li>
                     </ul>
                     <div class="socmed">
                         <a class="l-nav" href="https://www.linkedin.com/in/kassidy-lewis/"><i class="fa-brands fa-linkedin"></i></a>

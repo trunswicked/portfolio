@@ -11,7 +11,8 @@
 .short-desc {
     grid-area: 3 / 1 / 4 / 4;
     padding: 1.25rem;
-    background-color: var(--orange);
+    background-color: var(--black);
+    color: var(--white);
     align-items: center;
     border-image-source: url(/images/border.png);
     border-image-width: 80% auto auto 94%;
@@ -43,6 +44,7 @@ figure img {
 figcaption {
     text-align: center;
     color: var(--grey);
+    margin-top: 0.25rem;
 }
 
 /* Media queries */
