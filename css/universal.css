@@ -350,13 +350,21 @@ section {
 }
 
 .img-gallery {
+    flex-flow: row wrap;
     gap: 1rem;
-    margin-top: 1.5rem;
+    margin-top: 1.25rem;
+}
+
+.img-gallery div {
+    flex: 0 0 calc(50% - 1rem);
 }
 
 .img-gallery img {
     padding-bottom: 1rem;
-    flex: 0 0 calc(50% - 1rem);
+}
+
+.img-gallery img:last-child {
+    padding-bottom: 0;
 }
 
 /* Footer */
@@ -393,5 +401,11 @@ footer {
 @media screen and (min-width: 992px) {
     .container {
         width: 50%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .img-gallery div {
+        flex: 1 0 100%;
     }
 }
