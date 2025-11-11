@@ -6,7 +6,7 @@
         <title>
             Home | Kassidy Lewis
         </title>
-        <link rel="stylesheet" href="css/universal.css">
+        <link rel="preload stylesheet" href="css/universal.css">
         <link rel="stylesheet" href="css/home.css">
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="images/logo.svg">
@@ -46,7 +46,14 @@
                     <em>Click to view project page!</em>
                     <div class="home-gallery flex">
                         <div class="gallery-item">
-                            <a href="portfolio-site.html"><img src="images/portfolio_home.png" class="img-fit img-h" alt="Mobile and desktop versions of a portfolio website shown side-by-side"></a>
+                            <a href="portfolio-site.html">
+                                <img 
+                                srcset="images/portfolio_home (half).png 960w, images/portfolio_home.png 1920w" 
+                                sizes="(width <= 500px) 960px, 1920px" 
+                                src="images/portfolio_home.png" 
+                                class="img-fit img-h" 
+                                alt="Mobile and desktop versions of a portfolio website shown side-by-side">
+                            </a>
                         </div>
                         <div class="gallery-item">
                             <a href="social-media-graphics.html"><img src="images/socmed_comms.png" class="img-fit img-h" alt="Two social media graphics titled 'Commission Prices' shown side-by-side"></a>
