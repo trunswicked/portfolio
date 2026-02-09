@@ -1,16 +1,16 @@
 export default function ProjectItem(props) {
     return (
-        <div className="relative overflow-hidden h-50 group">
+        <div className="relative overflow-hidden min-h-50 max-h-64 group">
             <img 
                 src={props.src}
                 alt={props.alt}
                 className="h-full w-full object-cover"
             />
-            <div className="absolute p-6 h-50 top-full right-0 left-0 bg-black/90 text-white group-hover:top-0 group-focus:top-0 transition-all">
+            <div className="p-6 absolute top-full right-0 left-0 h-full text-white bg-black/90 group-hover:top-0 transition-all ease-in-out duration-300">
                 <div className="absolute bottom-0 mb-6">
                     <a href={props.url}>
                         <h4 className="font-display text-2xl text-teal hover:underline underline-offset-4">
-                            {props.title}<i className="fa-solid fa-angles-right text-base ml-1"></i>
+                            {props.title}<i className="fa-solid fa-angles-right ml-1 text-base"></i>
                         </h4>
                     </a>
                     <p>{props.desc}</p>
