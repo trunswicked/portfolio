@@ -1,13 +1,12 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import tailwindcss from '@tailwindcss/vite';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   base: '/portfolio/',
-  publicDir: "assets",
   server: {
-    port: 3000, // Change this if you want a different dev server port
+    port: 3000,
   },
 });
