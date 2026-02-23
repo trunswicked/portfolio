@@ -1,0 +1,126 @@
+---
+import CustomNav from '../components/Navigation.jsx'
+import CustomFooter from '../components/Footer.jsx'
+import ProjectItem from '../components/ProjectItem.jsx'
+---
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home | Kassidy Lewis | Graphic Designer</title>
+        <link href="/src/styles/global.css" rel="stylesheet">
+        <link rel="icon" type="image/svg+xml" href="/portfolio/favicon.svg">
+    </head>
+    <body id="top" class="font-body text-sm md:text-base">
+        <header>
+            <nav class="p-6 bg-black">
+                <CustomNav />
+            </nav>
+        </header>
+        <main>
+            <section class="p-6 overflow-hidden flex items-center justify-center h-[calc(100vh-68px)] md:h-[calc(100vh-72px)] text-center bg-teal">
+                <div>
+                    <h1 class="pb-2 font-display font-bold text-6xl md:text-8xl uppercase">
+                        Kassidy Lewis
+                    </h1>
+                    <span class="font-display text-2xl md:text-4xl">
+                        Designer | Illustrator | Developer
+                    </span>
+                </div>
+                <em class="absolute bottom-0 mb-8 animate-bounce">
+                    Scroll to continue <i class="fa-solid fa-angles-down text-xs"></i>
+                </em>
+            </section>
+            <div class="px-6 md:px-24 lg:px-64 xl:px-96">
+                <section class="py-12 border-b-3 border-grey/25">
+                    <h2 class="font-display text-4xl">The Artist</h2>
+                    <p class="py-4">Kassidy is an illustrator, designer, and ASU alumni with a love for colorful characters and the natural environment. When she's not seated at her work desk, she's always searching for something new to spark her creativity.</p>
+                    <a href="/portfolio/about.html" class="font-semibold hover:text-teal hover:underline decoration-2 underline-offset-3 transition-all duration-300">
+                        More about Kassidy<i class="fa-solid fa-angles-right ml-1 text-xs"></i>
+                    </a>
+                </section>
+                <section class="py-12">
+                    <h2 class="font-display text-4xl">The Work</h2>
+                    <h3 class="pt-4 pb-1 font-display text-2xl">Graphic Design, Web Development</h3>
+                    <em>Hover or tap images to view project details</em>
+                    <div class="py-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <ProjectItem
+                            src="/src/images/design/portfolio_home.png"
+                            alt="Mobile and desktop versions of a portfolio website shown side-by-side"
+                            url="/portfolio/portfolio-site.html"
+                            title="Portfolio Site"
+                            desc="2025 to 2026, Web Development"
+                        />
+                        <ProjectItem
+                            src="/src/images/design/mockup_desktop.png"
+                            alt="Webpage mockup shown on two desktop monitors"
+                            url="/portfolio/page-mockup.html"
+                            title="Page Mockup"
+                            desc="2024, Web Development"
+                        />
+                        <ProjectItem
+                            src="/src/images/design/alesco_overview.png"
+                            alt="Logo designs for Alesco Design Solutions"
+                            url="/portfolio/logo-work.html"
+                            title="Logo Work"
+                            desc="2024 to present, Graphic Design"
+                        />
+                        <ProjectItem
+                            src="/src/images/design/socmed_comms.png"
+                            alt="Two social media graphics titled: Commission Prices"
+                            url="/portfolio/social-media-graphics.html"
+                            title="Social Media Graphics"
+                            desc="2018 to present, Graphic Design"
+                        />
+                        <ProjectItem
+                            src="/src/images/design/map_overview.png"
+                            alt="Screenshot of an interactive fantasy map"
+                            url="/portfolio/interactive-map.html"
+                            title="Interactive Map"
+                            desc="2024, Web Development"
+                        />
+                        <ProjectItem
+                            src="/src/images/design/clock_entrance.png"
+                            alt="Screenshot of a building entrance in a 3D environment"
+                            url="/portfolio/clock-exhibit.html"
+                            title="Clock Exhibit"
+                            desc="2024, Multimedia"
+                        />
+                    </div>
+                    <h3 class="pt-2 font-display text-2xl">Illustration, Animation</h3>
+                    <em>Hover or tap images to view project details</em>
+                    <div class="py-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <ProjectItem
+                            src="/src/images/illustration/commission_3.png"
+                            alt="A winged character with long violet hair kneeling against an orange background"
+                            url="/portfolio/commission-work.html"
+                            title="Commission Work"
+                            desc="2018 to present, character artwork"
+                        />
+                        <ProjectItem
+                            src="/src/images/illustration/personal_33.png"
+                            alt="Close-up of two anthropormorphic characters smiling"
+                            url="/portfolio/personal-art.html"
+                            title="Personal Artwork"
+                            desc="2018 to present, fan art and sketches"
+                        />
+                        <ProjectItem
+                            src="/src/images/illustration/animation_still.png"
+                            alt="Video still with the caption: How To Comic Page"
+                            url="/portfolio/animation.html"
+                            title="Animation"
+                            desc="2018 to present, Motion Graphics"
+                        />
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="py-12 px-6 md:px-24 lg:px-64 xl:px-96 text-white bg-black">
+            <CustomFooter />
+        </footer>
+        <!-- Scripts -->
+        <script src="https://kit.fontawesome.com/f3040639fe.js" crossorigin="anonymous"></script>
+        <noscript>Your browser does not support JavaScript!</noscript>
+    </body>
+</html>

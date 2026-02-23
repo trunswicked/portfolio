@@ -1,7 +1,7 @@
 import { createRoot } from 'react-dom/client'
-import NavDefault from './components/navigation.jsx'
-import Footer from './components/footer.jsx'
-import ProjectItem from './components/project-item.jsx'
+import NavDefault from '/src/components/Navigation.jsx'
+import Footer from '/src/components/Footer.jsx'
+import ProjectItem from '/src/components/ProjectItem.jsx'
 
 const navNode = document.getElementById('main-navigation')
 const navRoot = createRoot(navNode)
@@ -15,8 +15,6 @@ const itemNode = document.getElementById('work-grid')
 const itemRoot = createRoot(itemNode)
 itemRoot.render(
     <>
-        <h3 className="pt-2 pb-1 font-display text-2xl">Graphic Design, Web Development</h3>
-        <em>Hover or tap to view project details</em>
         <div className="py-4 grid grid-cols-1 md:grid-cols-2 gap-4">
             <ProjectItem
                 src="images/design/portfolio_home.png"
