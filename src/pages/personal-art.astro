@@ -1,0 +1,122 @@
+---
+import CustomNav from '../components/Navigation.jsx'
+import CustomFooter from '../components/Footer.jsx'
+import ProjectNav from '../components/ProjectNav.jsx'
+---
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Personal Artwork | Kassidy Lewis | Graphic Designer</title>
+        <link href="/src/styles/global.css" rel="stylesheet">
+        <link rel="icon" type="image/svg+xml" href="/portfolio/favicon.svg">
+    </head>
+    <body id="top" class="font-body text-sm md:text-base">
+        <header>
+            <nav class="p-6 bg-black" aria-labelledby="site-navigation">
+                <CustomNav />
+            </nav>
+        </header>
+        <main>
+            <section class="pt-6 md:pt-12 pb-12 px-6 md:px-24 xl:px-64">
+                <a href="/portfolio/projects.html" class="font-semibold hover:text-teal hover:underline decoration-2 underline-offset-3 transition-all duration-300">
+                    <i class="fa-solid fa-angles-left mr-1 text-xs"></i>Back to Projects
+                </a>
+                <h1 class="py-4 pb-2 font-display text-6xl xl:text-8xl">Personal Artwork</h1>
+                <div class="grid grid-cols-1 md:grid-cols-3 grid-flow-dense gap-4">
+                    <div class="flex flex-col gap-4">
+                        <img 
+                            src="/src/images/illustration/personal_1.png" 
+                            alt=" " 
+                            class="w-full object-cover"
+                        >
+                        <img 
+                            src="/src/images/illustration/personal_45.png" 
+                            alt=" " 
+                            class="w-full object-cover"
+                        >
+                        <img 
+                            src="/src/images/illustration/personal_8.png" 
+                            alt=" " 
+                            class="w-full object-cover"
+                        >
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <img 
+                            src="/src/images/illustration/personal_33.png" 
+                            alt=" " 
+                            class="w-full object-cover"
+                        >
+                        <img 
+                            src="/src/images/illustration/personal_17.png" 
+                            alt=" " 
+                            class="w-full object-cover"
+                        >
+                        <img 
+                            src="/src/images/illustration/personal_3.png" 
+                            alt=" " 
+                            class="w-full object-cover"
+                        >
+                        <img 
+                            src="/src/images/illustration/personal_10.png" 
+                            alt=" " 
+                            class="w-full object-cover"
+                        >
+                        <img 
+                            src="/src/images/illustration/personal_38.png" 
+                            alt=" " 
+                            class="w-full object-cover"
+                        >
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <img 
+                            src="/src/images/illustration/personal_27.png" 
+                            alt=" " 
+                            class="w-full object-cover"
+                        >
+                        <img 
+                            src="/src/images/illustration/personal_25.png" 
+                            alt=" " 
+                            class="w-full object-cover"
+                        >
+                        <img 
+                            src="/src/images/illustration/personal_1.png" 
+                            alt=" " 
+                            class="w-full object-cover"
+                        >
+                        <img 
+                            src="/src/images/illustration/personal_34.png" 
+                            alt=" " 
+                            class="w-full object-cover"
+                        >
+                    </div>
+                </div>
+            </section>
+            <div class="px-6 md:px-24 lg:px-64 xl:px-96">
+                <section id="the-method" class="pb-12 border-b-3 border-grey/25">
+                    <p class="pb-4">Above is a collection of original artwork, sketches, and fan art that I've shared to social media throughout 2018 to 2026. These are publically shared in order to connect with fellow creatives and potential clients for paid commissions (<a href="https://github.com/trunswicked/portfolio" class="font-semibold hover:text-teal hover:underline decoration-2 underline-offset-3 transition-all duration-300">view my commission work here</a>), but I also enjoy the creation of these personal works in order to improve my skills.</p>
+                    <p>All illustrations were created in Clip Studio Paint.</p>
+                </section>
+                <nav class="py-12" aria-labelledby="project-navigation">
+                    <ProjectNav
+                        src_left="/src/images/illustration/commission_3.png"
+                        alt_left="A winged character with long violet hair kneeling against an orange background"
+                        link_left="/portfolio/commission-work.html"
+                        name_left="Commission Work"
+                        src_right="/src/images/illustration/animation_still.png"
+                        alt_right="Video still with the caption: How To Comic Page"
+                        link_right="/portfolio/animation.html"
+                        name_right="Animation"
+                    />
+                </nav>
+            </div>
+        </main>
+        <footer class="py-12 px-6 md:px-24 lg:px-64 xl:px-96 text-white bg-black">
+            <CustomFooter />
+        </footer>
+        <!-- Scripts -->
+        <script src="https://kit.fontawesome.com/f3040639fe.js" crossorigin="anonymous"></script>
+        <noscript>Your browser does not support JavaScript!</noscript>
+    </body>
+</html>
