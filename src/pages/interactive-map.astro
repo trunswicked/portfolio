@@ -8,7 +8,7 @@ import ProjectNav from '../components/ProjectNav.jsx'
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Page Mockup | Kassidy Lewis | Graphic Designer</title>
+        <title>Interactive Map | Kassidy Lewis | Graphic Designer</title>
         <link href="/src/styles/global.css" rel="stylesheet">
         <link rel="icon" type="image/svg+xml" href="/portfolio/favicon.svg">
     </head>
@@ -23,26 +23,26 @@ import ProjectNav from '../components/ProjectNav.jsx'
                 <a href="/portfolio/projects.html" class="font-semibold hover:text-teal hover:underline decoration-2 underline-offset-3 transition-all duration-300">
                     <i class="fa-solid fa-angles-left mr-1 text-xs"></i>Back to Projects
                 </a>
-                <h1 class="pt-4 font-display text-6xl xl:text-8xl">Page Mockup</h1>
+                <h1 class="pt-4 font-display text-6xl xl:text-8xl">Interactive Map</h1>
                 <div class="pt-2 grid grid-cols-[2fr_1fr_2fr] gap-4">
                     <img 
-                        src="/src/images/design/mockup_desktop.png" 
-                        alt="Webpage mockup shown on two desktop monitors" 
+                        src="/src/images/design/map_overview.png" 
+                        alt="Screenshot of a colorful fictional world map, with a text description shown to the left" 
                         class="col-span-3 w-full h-full object-cover"
                     >
                     <img 
-                        src="/src/images/design/mockup_mobile.png" 
-                        alt="Mobile webpage mockup displayed on an iPhone" 
+                        src="/src/images/design/map_main.png" 
+                        alt="Screenshot of a colorful fictional world map" 
                         class="w-full h-full object-cover"
                     >
                     <img 
-                        src="/src/images/design/mockup_listings.png" 
-                        alt="Screenshot of a webpage that displays a grid of pet listings" 
+                        src="/src/images/design/map_slides.png" 
+                        alt="Text descriptions of three different locations, separated by images of a jungle, beach, and oceanside house" 
                         class="col-span-2 w-full h-full object-cover"
                     >
                     <img 
-                        src="/src/images/design/mockup_compare.png" 
-                        alt="Desktop and mobile designs of a webpage mockup shown side-by-side" 
+                        src="/src/images/design/map_xd.png" 
+                        alt="Screenshot of the interface of Adobe XD, with several text windows selected and highlighted in blue" 
                         class="col-span-3 lg:col-span-2 w-full h-full object-cover"
                     >
                     <div id="the-objective" class="col-span-3 lg:col-span-1 pt-6 flex">
@@ -51,13 +51,18 @@ import ProjectNav from '../components/ProjectNav.jsx'
                                 <h2 class="font-display text-4xl">The Objective</h2>
                                 <div class="flex mt-1 gap-2">
                                     <img
+                                        src="/src/images/svg/icon-illustrator.svg"
+                                        alt="Logo of Adobe Illustrator"
+                                        class="h-7"
+                                    >
+                                    <img
                                         src="/src/images/svg/icon-xd.svg"
                                         alt="Logo of Adobe XD"
                                         class="h-7"
                                     >
                                 </div>
                             </div>
-                            <p class="pt-4 lg:pb-4">Creating a static and responsive webpage mockup utilizing Adobe XD.</p>
+                            <p class="pt-4 lg:pb-4">Creating an interactive mockup of a fictional world map.</p>
                             <div class="hidden lg:block -ml-36 h-15 bg-teal mix-blend-exclusion">
                                 &nbsp;
                             </div>
@@ -88,33 +93,33 @@ import ProjectNav from '../components/ProjectNav.jsx'
             <div class="px-6 md:px-24 lg:px-64 xl:px-96">
                 <section id="the-method" class="py-12 border-b-3 border-grey/25">
                     <h2 class="font-display text-4xl">The Method</h2>
-                    <p class="py-4">Every building requires a foundation, and every website is built upon a design system. The goal of this project was to establish the visual style of a webpage and to construct a static "preview" out of it.</p>
-                    <p>Given the choice of theme, I decided on a pet-centric design, as pet websites have straightforward imagery and objectives that would be simple to identify and replicate. (Also, who doesn't love puppies?)</p>
+                    <p class="py-4">This interactive map mockup is a personal venture that I've converted into additional prototyping practice, which is of course an essential skill to have as a web designer and developer. I consider it one of my most extensive projects.</p>
+                    <p>The first iteration, created in 2024, features forty total buttons integrated into the map. These buttons toggle a respective "description" window. It was not developed for mobile devices and thus the interactivity may only be viewed in a desktop browser, but the live preview <a href="https://xd.adobe.com/view/4e7d88f2-e494-4d47-ae03-d01a82d18426-1b2e/" class="font-semibold hover:text-teal hover:underline decoration-2 underline-offset-3 transition-all duration-300">can be viewed here</a>.</p>
                     <div class="py-6 text-center">
                         <img 
-                            src="/src/images/design/mockup_mood.png" 
-                            alt="Moodboard for a webpage mockup including color, fonts, and button styles" 
+                            src="/src/images/design/map_xd.png" 
+                            alt="Screenshot of the interface of Adobe XD, with several text windows selected and highlighted in blue" 
                             class="w-full h-full object-cover"
                         >
-                        <p class="pt-2 text-grey">Moodboard establishing colors, fonts, and button styles.</p>
+                        <p class="pt-2 text-grey">Screenshot of the initial prototyping setup.</p>
                     </div>
-                    <p class="pb-4">The mockup was created with three adjectives in mind: playful, inviting, and reliable. The first two descriptors are established in font and color choices, as well as the jolly directives of the site. Reliability is evident in the grouping of information and consistency of margins, font sizes, etc.</p>
-                    <p>Animated elements were also considered, despite the mockup being primarily static. The end result would allow the user to scroll through and filter hundreds of local pet listings.</p>
+                    <p class="pb-4">Following the fantasy setting of the fictional world, the visuals of this first release would take on an elegant medieval style as well. Users are encouraged to interact with text buttons in order to explore different locales. Upon clicking a locale name, its description and a scenic image representing that specific territory are shown. The description window may be closed with another click.</p>
+                    <p>Two years after the original was completed, I would decide to "remaster" this project with responsive web interactivity in mind. The map design received a sleek make-over - which can be seen at the very top of this page - and once completed, it will feature full JavaScript functionality!</p>
                 </section>
                 <section id="the-lesson" class="py-12 border-b-3 border-grey/25">
                     <h2 class="font-display text-4xl">The Lesson</h2>
-                    <p class="pt-4">This project was a fundamental exercise in the prototyping capabilities of Adobe XD, as well as in responsive design, as it includes both desktop and mobile versions of the mockup. It encouraged the mobile-first mindset that I would later tap into while <a href="/portfolio/portfolio-site.html" class="font-semibold hover:text-teal hover:underline decoration-2 underline-offset-3 transition-all duration-300">developing this portfolio website</a>. The ideation period is also a crucial component of web development, and this project has familiarized me with the process.</p>
+                    <p class="pt-4">While prototyping this project, I was compelled to view the experience from a user's perspective and solve problems accordingly. Questions such as "Is the design convenient?" and "Could the directions be simplified or improved in any way?" encouraged me to develop a sturdy and user-friendly interface. Constructing the map has also made me confident in my ability to design online user experiences.</p>
                 </section>
                 <nav class="py-12" aria-labelledby="project-navigation">
                     <ProjectNav
-                        src_left="/src/images/design/portfolio_home.png"
-                        alt_left="Mobile and desktop versions of a portfolio website shown side-by-side"
-                        link_left="/portfolio/portfolio-site.html"
-                        name_left="Portfolio Website"
-                        src_right="/src/images/design/alesco_overview.png"
-                        alt_right="Logo designs for Alesco Design Solutions"
-                        link_right="/portfolio/logo-work.html"
-                        name_right="Logo Work"
+                        src_left="/src/images/design/socmed_comms.png"
+                        alt_left="Two social media graphics titled: Commission Prices"
+                        link_left="/portfolio/social-media-graphics.html"
+                        name_left="Social Media Graphics"
+                        src_right="/src/images/design/clock_entrance.png"
+                        alt_right="Screenshot of a building entrance in a 3D environment"
+                        link_right="/portfolio/clock-exhibit.html"
+                        name_right="Clock Exhibit"
                     />
                 </nav>
             </div>
