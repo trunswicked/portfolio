@@ -1,4 +1,4 @@
-export default function CustomFooter() {
+export default function Footer() {
     return (
         <>
             <h2 className="font-display text-4xl">Get in Touch!</h2>

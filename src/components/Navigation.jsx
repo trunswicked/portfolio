@@ -1,4 +1,4 @@
-export default function CustomNav() {
+export default function Navigation() {
     return (
         <ul className="flex font-semibold text-white transition-all">
             <li className="grow">
