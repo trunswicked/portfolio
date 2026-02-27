@@ -4,10 +4,10 @@
 <h2>Technologies Used</h2>
 <ul>
   <li>HTML5</li>
-  <li>CSS</li>
-  <li>Tailwind CSS (<i>implementation in progress</i>)</li>
+  <li>Tailwind CSS</li>
   <li>JavaScript (ES6)</li>
-  <li>React (<i>implementation in progress</i>)</li>
+  <li>React</li>
+  <li>Astro JS</li>
   <li>Visual Studio Code</li>
   <li>Git, GitHub</li>
   <li>Adobe Photoshop (image editing)</li>
