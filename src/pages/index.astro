@@ -19,7 +19,7 @@ import "../styles/global.css";
             </nav>
         </header>
         <main>
-            <section class="p-6 overflow-hidden flex items-center justify-center h-[calc(100vh-68px)] md:h-[calc(100vh-72px)] text-center bg-teal">
+            <section class="p-6 md:p-24 flex items-center justify-center h-[calc(100dvh-68px)] md:h-[calc(100dvh-72px)] min-h-96 overflow-hidden text-center bg-teal">
                 <div>
                     <h1 class="pb-2 font-display font-bold text-6xl md:text-8xl uppercase">
                         Kassidy Lewis
@@ -28,11 +28,11 @@ import "../styles/global.css";
                         Designer | Illustrator | Developer
                     </span>
                 </div>
-                <em class="absolute bottom-0 mb-8 animate-bounce">
+                <em class="absolute bottom-0 mb-12 landscape:hidden animate-bounce">
                     Scroll to continue <i class="fa-solid fa-angles-down text-xs"></i>
                 </em>
             </section>
-            <div class="px-6 md:px-24 lg:px-64 xl:px-96">
+            <div class="px-6 md:px-24 lg:px-48 xl:px-96">
                 <section class="py-12 border-b-3 border-grey/25">
                     <h2 class="font-display text-4xl">The Artist</h2>
                     <p class="py-4">Kassidy is an illustrator, designer, and ASU alumni with a love for colorful characters and the natural environment. When she's not seated at her work desk, she's always searching for something new to spark her creativity.</p>
@@ -46,42 +46,42 @@ import "../styles/global.css";
                     <em>Hover or tap images to view project details</em>
                     <div class="py-4 grid grid-cols-1 md:grid-cols-2 gap-4">
                         <ProjectItem
-                            src="/portfolio/images/design/portfolio_home.png"
+                            src="/portfolio/images/design/portfolio_home.webp"
                             alt="Mobile and desktop versions of a portfolio website shown side-by-side"
                             url="/portfolio/portfolio-site/"
                             title="Portfolio Site"
                             desc="2025 to 2026, Web Development"
                         />
                         <ProjectItem
-                            src="/portfolio/images/design/mockup_desktop.png"
+                            src="/portfolio/images/design/mockup_desktop.webp"
                             alt="Webpage mockup shown on two desktop monitors"
                             url="/portfolio/page-mockup/"
                             title="Page Mockup"
                             desc="2024, Web Development"
                         />
                         <ProjectItem
-                            src="/portfolio/images/design/alesco_overview.png"
+                            src="/portfolio/images/design/alesco_overview.webp"
                             alt="Logo designs for Alesco Design Solutions"
                             url="/portfolio/logo-work/"
                             title="Logo Work"
                             desc="2024 to present, Graphic Design"
                         />
                         <ProjectItem
-                            src="/portfolio/images/design/socmed_comms.png"
+                            src="/portfolio/images/design/socmed_comms.webp"
                             alt="Two social media graphics titled: Commission Prices"
                             url="/portfolio/social-media-graphics/"
                             title="Social Media Graphics"
                             desc="2018 to present, Graphic Design"
                         />
                         <ProjectItem
-                            src="/portfolio/images/design/map_overview.png"
+                            src="/portfolio/images/design/map_overview.webp"
                             alt="Screenshot of an interactive fantasy map"
                             url="/portfolio/interactive-map/"
                             title="Interactive Map"
                             desc="2024, Web Development"
                         />
                         <ProjectItem
-                            src="/portfolio/images/design/clock_entrance.png"
+                            src="/portfolio/images/design/clock_entrance.webp"
                             alt="Screenshot of a building entrance in a 3D environment"
                             url="/portfolio/clock-exhibit/"
                             title="Clock Exhibit"
@@ -92,21 +92,21 @@ import "../styles/global.css";
                     <em>Hover or tap images to view project details</em>
                     <div class="py-4 grid grid-cols-1 md:grid-cols-2 gap-4">
                         <ProjectItem
-                            src="/portfolio/images/illustration/commission_3.png"
+                            src="/portfolio/images/illustration/commission_3.webp"
                             alt="A winged character with long violet hair kneeling against an orange background"
                             url="/portfolio/commission-work/"
                             title="Commission Work"
                             desc="2018 to present, character artwork"
                         />
                         <ProjectItem
-                            src="/portfolio/images/illustration/personal_33.png"
+                            src="/portfolio/images/illustration/personal_33.webp"
                             alt="Close-up of two anthropormorphic characters smiling"
                             url="/portfolio/personal-art/"
                             title="Personal Artwork"
                             desc="2018 to present, fan art and sketches"
                         />
                         <ProjectItem
-                            src="/portfolio/images/illustration/animation_still.png"
+                            src="/portfolio/images/illustration/animation_still.webp"
                             alt="Video still with the caption: How To Comic Page"
                             url="/portfolio/animation/"
                             title="Animation"
@@ -116,7 +116,7 @@ import "../styles/global.css";
                 </section>
             </div>
         </main>
-        <footer class="py-12 px-6 md:px-24 lg:px-64 xl:px-96 text-white bg-black">
+        <footer class="py-12 px-6 md:px-24 lg:px-48 xl:px-96 text-white bg-black">
             <Footer />
         </footer>
         <!-- Scripts -->
