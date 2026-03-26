@@ -3,7 +3,7 @@ export default function Navigation() {
         <ul className="flex font-semibold text-white transition-all">
             <li className="grow">
                 <a href="/portfolio/" className="hover:text-teal duration-300">
-                    <i className="fa-regular fa-house"></i>
+                    <i className="fa-solid fa-house"></i>
                 </a>
             </li>
             <li className="px-3 md:px-6">

@@ -26,7 +26,7 @@ import "../styles/global.css";
                         row-[1/2] col-[1/2]
                         lg:row-[1/3] lg:col-[1/2]
                     ">
-                        <img src="/portfolio/images/portrait.webp" alt="Black-and-white portrait of Kassidy Lewis" class="w-full h-96 lg:h-175 object-cover bg-grey/25">
+                        <img src="/portfolio/images/portrait.webp" alt="Black-and-white portrait of Kassidy Lewis" class="w-full h-96 lg:h-175 object-cover rounded bg-grey/25">
                     </div>
                     <div class="
                         row-[2/3] col-[1/3]
@@ -162,6 +162,13 @@ import "../styles/global.css";
                             exp="Expert"
                         />
                         <SkillBox
+                            icon="/portfolio/images/svg/icon-wp.svg"
+                            alt="Logo of WordPress"
+                            tool="Wordpress"
+                            progress="w-[95%]"
+                            exp="Expert"
+                        />
+                        <SkillBox
                             icon="/portfolio/images/svg/icon-blender.svg"
                             alt="Logo of Blender"
                             tool="Blender"
@@ -255,20 +262,22 @@ import "../styles/global.css";
                             View my Clock Exhibit project<i class="fa-solid fa-angles-right ml-1 text-xs"></i>
                         </a>
                     </p>
-                    <ProjectItem
-                        src="/portfolio/images/design/clock_entrance.webp"
-                        alt="Screenshot of a building entrance in a 3D environment"
-                        url="/portfolio/clock-exhibit/"
-                        title="Clock Exhibit"
-                        desc="2024, Multimedia"
-                    />
+                    <div>
+                        <ProjectItem
+                            src="/portfolio/images/design/clock_entrance.webp"
+                            alt="Screenshot of a building entrance in a 3D environment"
+                            url="/portfolio/clock-exhibit/"
+                            title="Clock Exhibit"
+                            desc="2024, Multimedia"
+                        />
+                    </div>
                     <h3 class="pt-6 pb-1 font-display text-2xl">Huntington University Arizona</h3>
                     <p>
                         <span class="font-semibold">B.S. in Animation</span> / 2018 to 2020, transferred to Arizona State University
                     </p>
                     <p class="pt-2">Before ultimately deciding to transfer to Arizona State University, I completed undergraduate courses such as 3D Computer Graphics I, Storyboard and Concept, and Web Design at HUAZ.</p>
                 </section>
-                <section id="work-experience" class="py-12 border-b-3 border-grey/25">
+                <section id="work-experience" class="pt-12 pb-6">
                     <h2 class="font-display text-4xl">Work Experience</h2>
                     <h3 class="pt-4 pb-1 font-display text-2xl">Freelance Designer</h3>
                     <p class="pb-2">
@@ -280,28 +289,30 @@ import "../styles/global.css";
                             View my commission work<i class="fa-solid fa-angles-right ml-1 text-xs"></i>
                         </a>
                     </p>
-                    <ProjectItem
-                        src="/portfolio/images/illustration/commission_22.webp"
-                        alt=" "
-                        url="/portfolio/commission-work/"
-                        title="Commission Work"
-                        desc="2018 to present, character artwork"
-                    />
+                    <div>
+                        <ProjectItem
+                            src="/portfolio/images/illustration/commission_22.webp"
+                            alt=" "
+                            url="/portfolio/commission-work/"
+                            title="Commission Work"
+                            desc="2018 to present, character artwork"
+                        />
+                    </div>
                     <h3 class="pt-6 pb-1 font-display text-2xl">Package Handler</h3>
                     <p class="pb-2">
                         <span class="font-semibold">Atomic Ammunition</span> / Phoenix, AZ / 2020
                     </p>
                     <p>I was responsible for labelling and sorting packages in a warehouse environment. Additionally, I participated in loading packages onto palettes alongside other workers, and assisted in daily work area maintenance.</p>
                 </section>
-                <section class="py-12">
-                    <h2 class="font-display text-4xl">Why Me?</h2>
-                    <p class="pt-4">If you're searching for a creative mind who will go above and beyond in terms of organization, timeliness, and problem-solving, I'm your person. My freelance experience has made me incredibly skilled at maintaining my work-life balance. Additionally, I'm always searching for external inspiration for my work, which keeps me in touch with current design trends. If you share my interest in the natural environment and sustainable design practices as well, that's a bonus!</p>
+                <section class="pt-6 pb-12">
+                    <div class="p-6 rounded bg-grey/10 border-2 border-grey/25">
+                        <h2 class="font-display text-4xl">Why Me?</h2>
+                        <p class="pt-4">If you're searching for a creative mind who will go above and beyond in terms of organization, timeliness, and problem-solving, I'm your person. My freelance experience has made me incredibly skilled at maintaining my work-life balance. Additionally, I'm always searching for external inspiration for my work, which keeps me in touch with current design trends. If you share my interest in the natural environment and sustainable design practices as well, that's a bonus!</p>
+                    </div>
                 </section>
             </div>
         </main>
-        <footer class="py-12 px-6 md:px-24 lg:px-48 xl:px-96 text-white bg-black">
-            <Footer />
-        </footer>
+        <Footer />
         <!-- Scripts -->
         <script src="https://kit.fontawesome.com/f3040639fe.js" crossorigin="anonymous"></script>
         <noscript>Your browser does not support JavaScript!</noscript>

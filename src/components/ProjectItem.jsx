@@ -5,10 +5,10 @@ export default function ProjectItem(props) {
                 <img 
                     src={props.src}
                     alt={props.alt}
-                    className="h-60 w-full object-cover bg-grey/25"
+                    className="w-full object-cover rounded-t bg-grey/25"
                 />
             </a>
-            <div className="p-6 absolute top-full right-0 left-0 h-full text-white bg-black/90 group-hover:top-0 transition-all ease-in-out duration-300">
+            <div className="p-6 absolute top-full right-0 left-0 h-full rounded-t text-white bg-black/90 group-hover:top-0 transition-all ease-in-out duration-300">
                 <div className="absolute bottom-0 mb-6">
                     <a href={props.url}>
                         <h4 className="font-display text-2xl text-teal hover:underline underline-offset-4">
