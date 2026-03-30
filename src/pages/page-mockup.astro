@@ -28,22 +28,22 @@ import "../styles/global.css";
                     <img 
                         src="/portfolio/images/design/mockup_desktop.webp" 
                         alt="Webpage mockup shown on two desktop monitors" 
-                        class="col-span-3 w-full h-50 md:h-96 lg:h-148 object-cover"
+                        class="col-span-3 w-full h-50 md:h-96 lg:h-148 object-cover rounded hover:opacity-75 transition-opacity img-expand"
                     >
                     <img 
                         src="/portfolio/images/design/mockup_mobile.webp" 
                         alt="Mobile webpage mockup displayed on an iPhone" 
-                        class="w-full h-30 md:h-72 lg:h-96 object-cover"
+                        class="w-full h-30 md:h-72 lg:h-96 object-cover rounded hover:opacity-75 transition-opacity img-expand"
                     >
                     <img 
                         src="/portfolio/images/design/mockup_listings.webp" 
                         alt="Screenshot of a webpage that displays a grid of pet listings" 
-                        class="col-span-2 w-full h-30 md:h-72 lg:h-96 object-cover"
+                        class="col-span-2 w-full h-30 md:h-72 lg:h-96 object-cover rounded hover:opacity-75 transition-opacity img-expand"
                     >
                     <img 
                         src="/portfolio/images/design/mockup_compare.webp" 
                         alt="Desktop and mobile designs of a webpage mockup shown side-by-side" 
-                        class="col-span-3 lg:col-span-2 w-full h-50 md:h-72 lg:h-96 object-cover"
+                        class="col-span-3 lg:col-span-2 w-full h-50 md:h-72 lg:h-96 object-cover rounded hover:opacity-75 transition-opacity img-expand"
                     >
                     <div id="the-objective" class="col-span-3 lg:col-span-1 pt-6 flex">
                         <div class="self-center w-full">
@@ -86,7 +86,7 @@ import "../styles/global.css";
                 </ul>
             </nav>
             <div class="px-6 md:px-24 lg:px-48 xl:px-96">
-                <section id="the-method" class="py-12 border-b-3 border-grey/25">
+                <section id="the-method" class="py-12">
                     <h2 class="font-display text-4xl">The Method</h2>
                     <p class="py-4">Every building requires a foundation, and every website is built upon a design system. The goal of this project was to establish the visual style of a webpage and to construct a static "preview" out of it.</p>
                     <p>Given the choice of theme, I decided on a pet-centric design, as pet websites have straightforward imagery and objectives that would be simple to identify and replicate. (Also, who doesn't love puppies?)</p>
@@ -94,23 +94,25 @@ import "../styles/global.css";
                         <img 
                             src="/portfolio/images/design/mockup_mood.webp" 
                             alt="Moodboard for a webpage mockup including color, fonts, and button styles" 
-                            class="w-full h-64 md:h-96 object-cover bg-grey/25"
+                            class="w-full h-64 md:h-96 object-cover bg-grey/25 rounded hover:opacity-75 transition-opacity img-expand"
                         >
                         <p class="pt-2 text-grey">Moodboard establishing colors, fonts, and button styles.</p>
                     </div>
                     <p class="pb-4">The mockup was created with three adjectives in mind: playful, inviting, and reliable. The first two descriptors are established in font and color choices, as well as the jolly directives of the site. Reliability is evident in the grouping of information and consistency of margins, font sizes, etc.</p>
                     <p>Animated elements were also considered, despite the mockup being primarily static. The end result would allow the user to scroll through and filter hundreds of local pet listings.</p>
                 </section>
-                <section id="the-lesson" class="py-12 border-b-3 border-grey/25">
-                    <h2 class="font-display text-4xl">The Lesson</h2>
-                    <p class="pt-4">This project was a fundamental exercise in the prototyping capabilities of Adobe XD, as well as in responsive design, as it includes both desktop and mobile versions of the mockup. It encouraged the mobile-first mindset that I would later tap into while <a href="/portfolio/portfolio-site/" class="font-semibold hover:text-teal hover:underline decoration-2 underline-offset-3 transition-all duration-300">developing this portfolio website</a>. The ideation period is also a crucial component of web development, and this project has familiarized me with the process.</p>
+                <section id="the-lesson" class="py-6">
+                    <div class="p-6 rounded bg-grey/10 border-2 border-grey/25">
+                        <h2 class="font-display text-4xl">The Lesson</h2>
+                        <p class="pt-4">This project was a fundamental exercise in the prototyping capabilities of Adobe XD, as well as in responsive design, as it includes both desktop and mobile versions of the mockup. It encouraged the mobile-first mindset that I would later tap into while <a href="/portfolio/portfolio-site/" class="font-semibold hover:text-teal hover:underline decoration-2 underline-offset-3 transition-all duration-300">developing this portfolio website</a>. The ideation period is also a crucial component of web development, and this project has familiarized me with the process.</p>
+                    </div>
                 </section>
                 <nav class="py-12" aria-labelledby="project-navigation">
                     <ProjectNav
-                        src_left="/portfolio/images/design/portfolio_home.webp"
-                        alt_left="Mobile and desktop versions of a portfolio website shown side-by-side"
-                        link_left="/portfolio/portfolio-site/"
-                        name_left="Portfolio Website"
+                        src_left="/portfolio/images/design/fairchild_home.webp"
+                        alt_left="Mobile and desktop versions of a website homepage shown side-by-side"
+                        link_left="/portfolio/fairchild-website/"
+                        name_left="Fairchild Website"
                         src_right="/portfolio/images/design/alesco_overview.webp"
                         alt_right="Logo designs for Alesco Design Solutions"
                         link_right="/portfolio/logo-work/"
@@ -122,6 +124,7 @@ import "../styles/global.css";
         <Footer />
         <!-- Scripts -->
         <script src="https://kit.fontawesome.com/f3040639fe.js" crossorigin="anonymous"></script>
+        <script src="../main.js"></script>
         <noscript>Your browser does not support JavaScript!</noscript>
     </body>
 </html>

@@ -28,22 +28,22 @@ import "../styles/global.css";
                     <img 
                         src="/portfolio/images/design/socmed_comms.webp" 
                         alt="Two social media graphics titled 'Commission Prices' shown side-by-side" 
-                        class="col-span-3 w-full h-50 md:h-96 lg:h-148 object-cover bg-grey/25"
+                        class="col-span-3 w-full h-50 md:h-96 lg:h-148 object-cover bg-grey/25 rounded hover:opacity-75 transition-opacity img-expand"
                     >
                     <img 
                         src="/portfolio/images/design/socmed_holiday.webp" 
                         alt="Social media graphic titled 'Holiday Icons' with two anime characters in Christmas outfits smiling at each other" 
-                        class="w-full h-30 md:h-72 lg:h-96 object-cover bg-grey/25"
+                        class="w-full h-30 md:h-72 lg:h-96 object-cover bg-grey/25 rounded hover:opacity-75 transition-opacity img-expand"
                     >
                     <img 
                         src="/portfolio/images/design/socmed_raffle.webp" 
                         alt="Social media graphic titled 'Raffle' with the photo of a smirking anime character" 
-                        class="col-span-2 w-full h-30 md:h-72 lg:h-96 object-cover bg-grey/25"
+                        class="col-span-2 w-full h-30 md:h-72 lg:h-96 object-cover bg-grey/25 rounded hover:opacity-75 transition-opacity img-expand"
                     >
                     <img 
                         src="/portfolio/images/design/socmed_comms_2.webp" 
                         alt="Two social media graphics titled 'Commissions Open' shown side-by-side" 
-                        class="col-span-3 lg:col-span-2 w-full h-50 md:h-72 lg:h-96 object-cover bg-grey/25"
+                        class="col-span-3 lg:col-span-2 w-full h-50 md:h-72 lg:h-96 object-cover bg-grey/25 rounded hover:opacity-75 transition-opacity img-expand"
                     >
                     <div id="the-objective" class="col-span-3 lg:col-span-1 pt-6 flex">
                         <div class="self-center w-full">
@@ -91,7 +91,7 @@ import "../styles/global.css";
                 </ul>
             </nav>
             <div class="px-6 md:px-24 lg:px-48 xl:px-96">
-                <section id="the-method" class="py-12 border-b-3 border-grey/25">
+                <section id="the-method" class="py-12">
                     <h2 class="font-display text-4xl">The Method</h2>
                     <p class="py-4">As a young artist who found herself making connections through platforms such as DeviantART and Tumblr in the early 2000s, I've witnessed many of my creative peers offer custom artwork services, and would eventually decide to advertise <a href="/portfolio/commission-work/" class="font-semibold hover:text-teal hover:underline decoration-2 underline-offset-3 transition-all duration-300">my own digital art commissions</a> as well.</p>
                     <p>At first, these ads weren't worth writing home about. But as I've continuously worked to improve my illustration skills and streamline my commission process, I realized it may be advantageous to create a series of personal graphics that I could re-use across multiple platforms.</p>
@@ -99,16 +99,18 @@ import "../styles/global.css";
                         <img 
                             src="/portfolio/images/design/socmed_bsky.webp" 
                             alt="Screenshot of a Bluesky post titled: September Commissions Open" 
-                            class="w-full h-64 md:h-96 object-cover bg-grey/25"
+                            class="w-full h-64 md:h-96 object-cover rounded bg-grey/25 hover:opacity-75 transition-opacity img-expand"
                         >
                         <p class="pt-2 text-grey">Graphic shown in a post on Bluesky Social.</p>
                     </div>
                     <p class="pb-4">Firstly, these ads would communicate information such as pricing and the quality of my work from a quick glance. A strong visual heirarchy is required to capture attention, especially online! The graphics shown on this page were also created in tandem with my portfolio website, and utilize the same visual style.</p>
                     <p>Graphics are sized according to each platform's recommended dimensions. If necessary, several iterations are saved in order to avoid any unflattering cropping.</p>
                 </section>
-                <section id="the-lesson" class="py-12 border-b-3 border-grey/25">
-                    <h2 class="font-display text-4xl">The Lesson</h2>
-                    <p class="pt-4">Constructing my own social media graphics has made me keenly aware of the common practices of online advertising. It has also assisted in improving my fundamental design skills, as well as my Adobe InDesign proficiency. Additionally, several of my commissioners have cited the graphics as a factor in their decision to work with me, suggesting that their usage has indeed captured more attention!</p>
+                <section id="the-lesson" class="py-6">
+                    <div class="p-6 rounded bg-grey/10 border-2 border-grey/25">
+                        <h2 class="font-display text-4xl">The Lesson</h2>
+                        <p class="pt-4">Constructing my own social media graphics has made me keenly aware of the common practices of online advertising. It has also assisted in improving my fundamental design skills, as well as my Adobe InDesign proficiency. Additionally, several of my commissioners have cited the graphics as a factor in their decision to work with me, suggesting that their usage has indeed captured more attention!</p>
+                    </div>
                 </section>
                 <nav class="py-12" aria-labelledby="project-navigation">
                     <ProjectNav
@@ -127,6 +129,7 @@ import "../styles/global.css";
         <Footer />
         <!-- Scripts -->
         <script src="https://kit.fontawesome.com/f3040639fe.js" crossorigin="anonymous"></script>
+        <script src="../main.js"></script>
         <noscript>Your browser does not support JavaScript!</noscript>
     </body>
 </html>

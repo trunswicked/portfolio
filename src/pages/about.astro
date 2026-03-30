@@ -26,7 +26,10 @@ import "../styles/global.css";
                         row-[1/2] col-[1/2]
                         lg:row-[1/3] lg:col-[1/2]
                     ">
-                        <img src="/portfolio/images/portrait.webp" alt="Black-and-white portrait of Kassidy Lewis" class="w-full h-96 lg:h-175 object-cover rounded bg-grey/25">
+                        <img 
+                            src="/portfolio/images/portrait.webp" 
+                            alt="Black-and-white portrait of Kassidy Lewis" 
+                            class="w-full h-96 lg:h-175 object-cover rounded bg-grey/25 hover:opacity-75 transition-opacity img-expand" />
                     </div>
                     <div class="
                         row-[2/3] col-[1/3]
@@ -40,7 +43,7 @@ import "../styles/global.css";
                             <i class="fa-solid fa-file-lines"></i><i class="fa-solid fa-download mr-1"></i>Download my résumé (opens in new tab)
                         </a>
                     </div>
-                    <div class="-ml-36 mb-6 lg:mb-0 h-25 self-end lg:self-start bg-teal mix-blend-exclusion">
+                    <div class="-ml-36 mb-6 lg:mb-0 h-25 self-end lg:self-start rounded bg-teal mix-blend-exclusion">
                         &nbsp;
                     </div>
                 </div>
@@ -164,7 +167,7 @@ import "../styles/global.css";
                         <SkillBox
                             icon="/portfolio/images/svg/icon-wp.svg"
                             alt="Logo of WordPress"
-                            tool="Wordpress"
+                            tool="WordPress"
                             progress="w-[95%]"
                             exp="Expert"
                         />
@@ -252,7 +255,10 @@ import "../styles/global.css";
                 </section>
                 <section id="education" class="py-12 border-b-3 border-grey/25">
                     <h2 class="font-display text-4xl">Education</h2>
-                    <h3 class="pt-4 pb-1 font-display text-2xl">Arizona State University</h3>
+                    <h3 class="pt-4 pb-1 font-display text-2xl">
+                        <i class="fa-solid fa-graduation-cap opacity-25"></i>
+                        Arizona State University
+                    </h3>
                     <p class="pb-2">
                         <span class="font-semibold">B.S. in Graphic Design</span> / 2020 to 2025, graduated May 2025
                     </p>
@@ -262,16 +268,13 @@ import "../styles/global.css";
                             View my Clock Exhibit project<i class="fa-solid fa-angles-right ml-1 text-xs"></i>
                         </a>
                     </p>
-                    <div>
-                        <ProjectItem
-                            src="/portfolio/images/design/clock_entrance.webp"
-                            alt="Screenshot of a building entrance in a 3D environment"
-                            url="/portfolio/clock-exhibit/"
-                            title="Clock Exhibit"
-                            desc="2024, Multimedia"
-                        />
-                    </div>
-                    <h3 class="pt-6 pb-1 font-display text-2xl">Huntington University Arizona</h3>
+                    <a href="/portfolio/clock-exhibit/">
+                        <img src="/portfolio/images/design/clock_entrance.webp" class="w-full h-64 md:h-96 object-cover rounded hover:opacity-75 transition-opacity" alt="Screenshot of a building entrance in a 3D environment" />
+                    </a>
+                    <h3 class="pt-6 pb-1 font-display text-2xl">
+                        <i class="fa-solid fa-graduation-cap opacity-25"></i>
+                        Huntington University Arizona
+                    </h3>
                     <p>
                         <span class="font-semibold">B.S. in Animation</span> / 2018 to 2020, transferred to Arizona State University
                     </p>
@@ -279,7 +282,10 @@ import "../styles/global.css";
                 </section>
                 <section id="work-experience" class="pt-12 pb-6">
                     <h2 class="font-display text-4xl">Work Experience</h2>
-                    <h3 class="pt-4 pb-1 font-display text-2xl">Freelance Designer</h3>
+                    <h3 class="pt-4 pb-1 font-display text-2xl">
+                        <i class="fa-solid fa-palette opacity-25"></i>
+                        Freelance Designer
+                    </h3>
                     <p class="pb-2">
                         <span class="font-semibold">Self-employed</span> / 2018 to present
                     </p>
@@ -289,16 +295,13 @@ import "../styles/global.css";
                             View my commission work<i class="fa-solid fa-angles-right ml-1 text-xs"></i>
                         </a>
                     </p>
-                    <div>
-                        <ProjectItem
-                            src="/portfolio/images/illustration/commission_22.webp"
-                            alt=" "
-                            url="/portfolio/commission-work/"
-                            title="Commission Work"
-                            desc="2018 to present, character artwork"
-                        />
-                    </div>
-                    <h3 class="pt-6 pb-1 font-display text-2xl">Package Handler</h3>
+                    <a href="/portfolio/commission-work/">
+                        <img src="/portfolio/images/illustration/commission_22.webp" class="w-full h-64 md:h-96 object-cover rounded hover:opacity-75 transition-opacity" alt="Illustration of a winged character flying and raising a sword" />
+                    </a>
+                    <h3 class="pt-6 pb-1 font-display text-2xl">
+                        <i class="fa-solid fa-box-archive opacity-25"></i>
+                        Package Handler
+                    </h3>
                     <p class="pb-2">
                         <span class="font-semibold">Atomic Ammunition</span> / Phoenix, AZ / 2020
                     </p>
@@ -315,6 +318,7 @@ import "../styles/global.css";
         <Footer />
         <!-- Scripts -->
         <script src="https://kit.fontawesome.com/f3040639fe.js" crossorigin="anonymous"></script>
+        <script src="../main.js"></script>
         <noscript>Your browser does not support JavaScript!</noscript>
     </body>
 </html>
