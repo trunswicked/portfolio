@@ -7,8 +7,7 @@ export default defineConfig({
   site: 'https://github.com/trunswicked',
   base: '/portfolio',
   integrations: [react()],
-
   vite: {
     plugins: [tailwindcss()],
-  },
+  }
 });

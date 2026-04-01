@@ -1,5 +1,6 @@
 ---
 import Navigation from '../components/Navigation.jsx';
+import SubNavigation from '../components/SubNavigation.jsx';
 import Footer from '../components/Footer.jsx';
 import ProjectNav from '../components/ProjectNav.jsx';
 import "../styles/global.css";
@@ -14,37 +15,45 @@ import "../styles/global.css";
     </head>
     <body id="top" class="font-body text-sm md:text-base">
         <header>
-            <nav class="p-6 bg-black" aria-labelledby="site-navigation">
-                <Navigation />
-            </nav>
+            <Navigation />
         </header>
         <main>
-            <section class="pt-6 md:pt-12 pb-12 px-6 md:px-24 xl:px-64">
+            <section class="pt-6 md:pt-12 px-6 md:px-12 xl:px-64">
                 <a href="/portfolio/projects/" class="font-semibold hover:text-teal hover:underline decoration-2 underline-offset-3 transition-all duration-300">
                     <i class="fa-solid fa-angles-left mr-1 text-xs"></i>Back to Projects
                 </a>
-                <h1 class="pt-4 font-display text-6xl xl:text-8xl">Interactive Map</h1>
-                <div class="pt-2 grid grid-cols-[2fr_1fr_2fr] gap-4">
-                    <img 
-                        src="/portfolio/images/design/map_overview.webp" 
-                        alt="Screenshot of a colorful fictional world map, with a text description shown to the left" 
-                        class="col-span-3 w-full h-50 md:h-96 lg:h-148 object-cover rounded hover:opacity-75 transition-opacity img-expand"
-                    >
-                    <img 
-                        src="/portfolio/images/design/map_main.webp" 
-                        alt="Screenshot of a colorful fictional world map" 
-                        class="w-full h-30 md:h-72 lg:h-96 object-cover rounded hover:opacity-75 transition-opacity img-expand"
-                    >
-                    <img 
-                        src="/portfolio/images/design/map_slides.webp" 
-                        alt="Text descriptions of three different locations, separated by images of a jungle, beach, and oceanside house" 
-                        class="col-span-2 w-full h-30 md:h-72 lg:h-96 object-cover rounded hover:opacity-75 transition-opacity img-expand"
-                    >
-                    <img 
-                        src="/portfolio/images/design/map_xd.webp" 
-                        alt="Screenshot of the interface of Adobe XD, with several text windows selected and highlighted in blue" 
-                        class="col-span-3 lg:col-span-2 w-full h-50 md:h-72 lg:h-96 object-cover rounded hover:opacity-75 transition-opacity img-expand"
-                    >
+                <h1 class="py-4 font-display text-6xl xl:text-8xl">Interactive Map</h1>
+                <div class="grid grid-cols-[2fr_1fr_2fr] gap-4">
+                    <!-- Image grid -->
+                    <div class="col-span-3 aspect-video rounded bg-grey/25">
+                        <img 
+                            src="/portfolio/images/design/map_overview.webp" 
+                            alt="Screenshot of a colorful fictional world map titled: Marborre" 
+                            class="aspect-video object-cover rounded hover:opacity-75 transition-opacity img-expand"
+                        >
+                    </div>
+                    <div class="aspect-square rounded bg-grey/25">
+                        <img 
+                            src="/portfolio/images/design/map_main.webp" 
+                            alt="Screenshot of a colorful fictional world map" 
+                            class="aspect-square object-cover rounded hover:opacity-75 transition-opacity img-expand"
+                        >
+                    </div>
+                    <div class="col-span-2 rounded bg-grey/25">
+                        <img 
+                            src="/portfolio/images/design/map_slides.webp" 
+                            alt="Text descriptions of three different locations, separated by images of a jungle, beach, and oceanside house" 
+                            class="h-full object-cover rounded hover:opacity-75 transition-opacity img-expand"
+                        >
+                    </div>
+                    <div class="col-span-3 lg:col-span-2 aspect-video rounded bg-grey/25">
+                        <img 
+                            src="/portfolio/images/design/map_biome.webp" 
+                            alt="Screenshot of a colorful fictional world map showing different biomes, with a color key shown to the right" 
+                            class="aspect-video object-cover rounded hover:opacity-75 transition-opacity img-expand"
+                        >
+                    </div>
+                    <!-- Image grid end -->
                     <div id="the-objective" class="col-span-3 lg:col-span-1 pt-6 flex">
                         <div class="self-center w-full">
                             <div class="flex justify-between">
@@ -70,60 +79,48 @@ import "../styles/global.css";
                     </div>
                 </div>
             </section>
-            <nav class="md:my-12 p-6 md:px-24 lg:px-64 xl:px-96 text-center bg-black text-white" aria-labelledby="page-navigation">
-                <em>Jump to:</em>
-                <ul class="pt-2 flex justify-center divide-x-3 divide-grey font-semibold transition-all">
-                    <li>
-                        <a href="#the-objective" class="pr-4 font-semibold hover:text-teal hover:underline decoration-2 underline-offset-3 transition-all duration-300">
-                            Objective
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#the-method" class="px-4 font-semibold hover:text-teal hover:underline decoration-2 underline-offset-3 transition-all duration-300">
-                            Method
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#the-lesson" class="pl-4 font-semibold hover:text-teal hover:underline decoration-2 underline-offset-3 transition-all duration-300">
-                            Lesson
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="px-6 md:px-24 lg:px-48 xl:px-96">
-                <section id="the-method" class="py-12">
+            <SubNavigation
+                link_1="#the-objective"
+                label_1="Objective"
+                link_2="#the-method"
+                label_2="Method"
+                link_3="#the-lesson"
+                label_3="Lesson"
+            />
+            <div class="px-6 md:px-24 lg:px-48 2xl:px-96">
+                <section id="the-method">
                     <h2 class="font-display text-4xl">The Method</h2>
                     <p class="py-4">This interactive map mockup is a personal venture that I've converted into additional prototyping practice, which is of course an essential skill to have as a web designer and developer. I consider it one of my most extensive projects.</p>
                     <p>The first iteration, created in 2024, features forty total buttons integrated into the map. These buttons toggle a respective "description" window. It was not developed for mobile devices and thus the interactivity may only be viewed in a desktop browser, but the live preview <a href="https://xd.adobe.com/view/4e7d88f2-e494-4d47-ae03-d01a82d18426-1b2e/" class="font-semibold hover:text-teal hover:underline decoration-2 underline-offset-3 transition-all duration-300">can be viewed here</a>.</p>
                     <div class="py-6 text-center">
-                        <img 
-                            src="/portfolio/images/design/map_xd.webp" 
-                            alt="Screenshot of the interface of Adobe XD, with several text windows selected and highlighted in blue" 
-                            class="w-full h-48 md:h-96 object-cover bg-grey/25 rounded hover:opacity-75 transition-opacity img-expand"
-                        >
+                        <div class="aspect-video rounded bg-grey/25">
+                            <img 
+                                src="/portfolio/images/design/map_xd.webp" 
+                                alt="Screenshot of the interface of Adobe XD, with several text windows selected and highlighted in blue" 
+                                class="aspect-video object-cover rounded hover:opacity-75 transition-opacity img-expand"
+                            >
+                        </div>
                         <p class="pt-2 text-grey">Screenshot of the initial prototyping setup in Adobe XD.</p>
                     </div>
                     <p class="pb-4">Following the fantasy setting of the fictional world, the visuals of this first release would take on an elegant medieval style as well. Users are encouraged to interact with text buttons in order to explore different locales. Upon clicking a locale name, its description and a scenic image representing that specific territory are shown. The description window may be closed with another click.</p>
                     <p>Two years after the original was completed, I would decide to "remaster" this project with responsive web interactivity in mind. The map design received a sleek make-over - which can be seen at the very top of this page - and once completed, it will feature full JavaScript functionality!</p>
                 </section>
-                <section id="the-lesson" class="py-6">
+                <section id="the-lesson" class="py-12">
                     <div class="p-6 rounded bg-grey/10 border-2 border-grey/25">
                         <h2 class="font-display text-4xl">The Lesson</h2>
                         <p class="pt-4">While prototyping this project, I was compelled to view the experience from a user's perspective and solve problems accordingly. Questions such as "Is the design convenient?" and "Could the directions be simplified or improved in any way?" encouraged me to develop a sturdy and user-friendly interface. Constructing the map has also made me confident in my ability to design online user experiences.</p>
                     </div>
                 </section>
-                <nav class="py-12" aria-labelledby="project-navigation">
-                    <ProjectNav
-                        src_left="/portfolio/images/design/socmed_comms.webp"
-                        alt_left="Two social media graphics titled: Commission Prices"
-                        link_left="/portfolio/social-media-graphics/"
-                        name_left="Social Media Graphics"
-                        src_right="/portfolio/images/design/clock_entrance.webp"
-                        alt_right="Screenshot of a building entrance in a 3D environment"
-                        link_right="/portfolio/clock-exhibit/"
-                        name_right="Clock Exhibit"
-                    />
-                </nav>
+                <ProjectNav
+                    src_left="/portfolio/images/design/socmed_comms.webp"
+                    alt_left="Two social media graphics titled: Commission Prices"
+                    link_left="/portfolio/social-media-graphics/"
+                    name_left="Social Media Graphics"
+                    src_right="/portfolio/images/design/clock_entrance.webp"
+                    alt_right="Screenshot of a building entrance in a 3D environment"
+                    link_right="/portfolio/clock-exhibit/"
+                    name_right="Clock Exhibit"
+                />
             </div>
         </main>
         <Footer />

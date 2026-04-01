@@ -1,8 +1,8 @@
 ---
 import Navigation from '../components/Navigation.jsx';
+import SubNavigation from '../components/SubNavigation.jsx';
 import Footer from '../components/Footer.jsx';
 import SkillBox from '../components/SkillBox.jsx';
-import ProjectItem from '../components/ProjectItem.jsx';
 import "../styles/global.css";
 ---
 <!DOCTYPE html>
@@ -15,21 +15,20 @@ import "../styles/global.css";
     </head>
     <body id="top" class="font-body text-sm md:text-base">
         <header>
-            <nav class="p-6 bg-black" aria-labelledby="site-navigation">
-                <Navigation />
-            </nav>
+            <Navigation />
         </header>
         <main>
-            <section class="py-6 md:pt-12 px-6 md:px-24 xl:px-64">
-                <div class="grid gap-4">
+            <section class="pt-6 md:pt-12 px-6 md:px-12 xl:px-64">
+                <div class="grid gap-6">
                     <div class="
                         row-[1/2] col-[1/2]
-                        lg:row-[1/3] lg:col-[1/2]
+                        lg:row-[1/3] lg:col-[1/2] min-w-50 rounded bg-grey/25
                     ">
                         <img 
                             src="/portfolio/images/portrait.webp" 
                             alt="Black-and-white portrait of Kassidy Lewis" 
-                            class="w-full h-96 lg:h-175 object-cover rounded bg-grey/25 hover:opacity-75 transition-opacity img-expand" />
+                            class="w-full h-96 lg:h-175 object-cover rounded hover:opacity-75 transition-opacity img-expand"
+                        >
                     </div>
                     <div class="
                         row-[2/3] col-[1/3]
@@ -48,28 +47,16 @@ import "../styles/global.css";
                     </div>
                 </div>
             </section>
-            <nav class="my-6 md:my-12 p-6 md:px-24 lg:px-64 xl:px-96 text-center bg-black text-white" aria-labelledby="page-navigation">
-                <em>Jump to:</em>
-                <ul class="pt-2 flex justify-center divide-x-3 divide-grey font-semibold transition-all">
-                    <li>
-                        <a href="#skills" class="pr-4 font-semibold hover:text-teal hover:underline decoration-2 underline-offset-3 transition-all duration-300">
-                            Skills
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#education" class="px-4 font-semibold hover:text-teal hover:underline decoration-2 underline-offset-3 transition-all duration-300">
-                            Education
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#work-experience" class="pl-4 font-semibold hover:text-teal hover:underline decoration-2 underline-offset-3 transition-all duration-300">
-                            Work Experience
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="px-6 md:px-24 lg:px-48 xl:px-96">
-                <section id="skills" class="pt-6 pb-12 border-b-3 border-grey/25">
+            <SubNavigation
+                link_1="#skills"
+                label_1="Skills"
+                link_2="#education"
+                label_2="Education"
+                link_3="#work-experience"
+                label_3="Work Experience"
+            />
+            <div class="px-6 md:px-24 lg:px-48 2xl:px-96">
+                <section id="skills" class="pb-12 border-b-3 border-grey/25">
                     <h2 class="font-display text-4xl">Skills</h2>
                     <h3 class="pt-4 font-display text-2xl">Tools of the Trade</h3>
                     <div class="pt-2 grid grid-cols-2 lg:grid-cols-3 gap-4">
@@ -263,14 +250,16 @@ import "../styles/global.css";
                         <span class="font-semibold">B.S. in Graphic Design</span> / 2020 to 2025, graduated May 2025
                     </p>
                     <p>I am an alumni of The Design School within the Herberger Institute for Design and the Arts. As an upperclassman, I was enrolled in courses such as Technology for Design, Motion Graphics / Interaction Design, and Regenerative Graphic Design.</p>
-                    <p class="py-4">
+                    <div class="py-4">
                         <a href="/portfolio/clock-exhibit/" class="font-semibold hover:text-teal hover:underline decoration-2 underline-offset-3 transition-all duration-300">
                             View my Clock Exhibit project<i class="fa-solid fa-angles-right ml-1 text-xs"></i>
                         </a>
-                    </p>
-                    <a href="/portfolio/clock-exhibit/">
-                        <img src="/portfolio/images/design/clock_entrance.webp" class="w-full h-64 md:h-96 object-cover rounded hover:opacity-75 transition-opacity" alt="Screenshot of a building entrance in a 3D environment" />
-                    </a>
+                    </div>
+                    <div class="aspect-video rounded bg-grey/25">
+                        <a href="/portfolio/clock-exhibit/">
+                            <img src="/portfolio/images/design/clock_entrance.webp" class="aspect-video object-cover rounded hover:opacity-75 transition-opacity" alt="Screenshot of a building entrance in a 3D environment">
+                        </a>
+                    </div>
                     <h3 class="pt-6 pb-1 font-display text-2xl">
                         <i class="fa-solid fa-graduation-cap opacity-25"></i>
                         Huntington University Arizona
@@ -280,7 +269,7 @@ import "../styles/global.css";
                     </p>
                     <p class="pt-2">Before ultimately deciding to transfer to Arizona State University, I completed undergraduate courses such as 3D Computer Graphics I, Storyboard and Concept, and Web Design at HUAZ.</p>
                 </section>
-                <section id="work-experience" class="pt-12 pb-6">
+                <section id="work-experience" class="pt-12">
                     <h2 class="font-display text-4xl">Work Experience</h2>
                     <h3 class="pt-4 pb-1 font-display text-2xl">
                         <i class="fa-solid fa-palette opacity-25"></i>
@@ -295,9 +284,11 @@ import "../styles/global.css";
                             View my commission work<i class="fa-solid fa-angles-right ml-1 text-xs"></i>
                         </a>
                     </p>
-                    <a href="/portfolio/commission-work/">
-                        <img src="/portfolio/images/illustration/commission_22.webp" class="w-full h-64 md:h-96 object-cover rounded hover:opacity-75 transition-opacity" alt="Illustration of a winged character flying and raising a sword" />
-                    </a>
+                    <div class="aspect-video rounded bg-grey/25">
+                        <a href="/portfolio/commission-work/">
+                            <img src="/portfolio/images/illustration/commission_22.webp" class="aspect-video object-cover rounded hover:opacity-75 transition-opacity" alt="Illustration of a winged character flying and raising a sword">
+                        </a>
+                    </div>
                     <h3 class="pt-6 pb-1 font-display text-2xl">
                         <i class="fa-solid fa-box-archive opacity-25"></i>
                         Package Handler
@@ -307,7 +298,7 @@ import "../styles/global.css";
                     </p>
                     <p>I was responsible for labelling and sorting packages in a warehouse environment. Additionally, I participated in loading packages onto palettes alongside other workers, and assisted in daily work area maintenance.</p>
                 </section>
-                <section class="pt-6 pb-12">
+                <section class="py-12">
                     <div class="p-6 rounded bg-grey/10 border-2 border-grey/25">
                         <h2 class="font-display text-4xl">Why Me?</h2>
                         <p class="pt-4">If you're searching for a creative mind who will go above and beyond in terms of organization, timeliness, and problem-solving, I'm your person. My freelance experience has made me incredibly skilled at maintaining my work-life balance. Additionally, I'm always searching for external inspiration for my work, which keeps me in touch with current design trends. If you share my interest in the natural environment and sustainable design practices as well, that's a bonus!</p>

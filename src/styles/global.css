@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900');
 
 @import "tailwindcss";
 
@@ -36,10 +36,11 @@
 #lightbox img {
     max-width: 80%;
     max-height: 80%;
+    border-radius: 4px;
 }
 
 #lightbox::after {
-    content: 'Click anywhere to close';
+    content: 'Click or tap anywhere to close';
     color: white;
     padding-top: 0.5rem;
 }

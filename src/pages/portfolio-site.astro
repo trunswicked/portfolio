@@ -1,5 +1,6 @@
 ---
 import Navigation from '../components/Navigation.jsx';
+import SubNavigation from '../components/SubNavigation.jsx';
 import Footer from '../components/Footer.jsx';
 import ProjectNav from '../components/ProjectNav.jsx';
 import "../styles/global.css";
@@ -14,37 +15,45 @@ import "../styles/global.css";
     </head>
     <body id="top" class="font-body text-sm md:text-base">
         <header>
-            <nav class="p-6 bg-black" aria-labelledby="site-navigation">
-                <Navigation />
-            </nav>
+            <Navigation />
         </header>
         <main>
-            <section class="pt-6 md:pt-12 pb-12 px-6 md:px-24 xl:px-64">
+            <section class="pt-6 md:pt-12 px-6 md:px-12 xl:px-64">
                 <a href="/portfolio/projects/" class="font-semibold hover:text-teal hover:underline decoration-2 underline-offset-3 transition-all duration-300">
                     <i class="fa-solid fa-angles-left mr-1 text-xs"></i>Back to Projects
                 </a>
-                <h1 class="pt-4 font-display text-6xl xl:text-8xl">Portfolio Site</h1>
-                <div class="pt-2 grid grid-cols-[2fr_1fr_2fr] gap-4">
-                    <img 
-                        src="/portfolio/images/design/portfolio_home.webp" 
-                        alt="Mobile and desktop versions of a portfolio website shown side-by-side" 
-                        class="col-span-3 w-full h-50 md:h-96 lg:h-148 object-cover rounded hover:opacity-75 transition-opacity img-expand"
-                    >
-                    <img 
-                        src="/portfolio/images/design/portfolio_mobile.webp" 
-                        alt="Screenshot of a webpage titled: Projects" 
-                        class="w-full h-30 md:h-72 lg:h-96 object-cover rounded hover:opacity-75 transition-opacity img-expand"
-                    >
-                    <img 
-                        src="/portfolio/images/design/portfolio_home_2.webp" 
-                        alt="Screenshot of a webpage titled: Social Media Graphics" 
-                        class="col-span-2 w-full h-30 md:h-72 lg:h-96 object-cover rounded hover:opacity-75 transition-opacity img-expand"
-                    >
-                    <img 
-                        src="/portfolio/images/design/portfolio_laptop.webp" 
-                        alt="Screenshot of a webpage titled: About Me. A black-and-white portrait of Kassidy Lewis is shown to the left" 
-                        class="col-span-3 lg:col-span-2 w-full h-50 md:h-72 lg:h-96 object-cover rounded hover:opacity-75 transition-opacity img-expand"
-                    >
+                <h1 class="py-4 font-display text-6xl xl:text-8xl">Portfolio Site</h1>
+                <div class="grid grid-cols-[2fr_1fr_2fr] gap-4">
+                    <!-- Image grid -->
+                    <div class="col-span-3 aspect-video rounded bg-grey/25">
+                        <img 
+                            src="/portfolio/images/design/portfolio_home.webp" 
+                            alt="Mobile and desktop versions of a portfolio website shown side-by-side" 
+                            class="aspect-video object-cover rounded hover:opacity-75 transition-opacity img-expand"
+                        >
+                    </div>
+                    <div class="aspect-square rounded bg-grey/25">
+                        <img 
+                            src="/portfolio/images/design/portfolio_mobile.webp" 
+                            alt="Screenshot of a webpage titled: Projects" 
+                            class="aspect-square object-cover rounded hover:opacity-75 transition-opacity img-expand"
+                        >
+                    </div>
+                    <div class="col-span-2 rounded bg-grey/25">
+                        <img 
+                            src="/portfolio/images/design/portfolio_home_2.webp" 
+                            alt="Screenshot of a webpage titled: Social Media Graphics" 
+                            class="h-full object-cover rounded hover:opacity-75 transition-opacity img-expand"
+                        >
+                    </div>
+                    <div class="col-span-3 lg:col-span-2 aspect-video rounded bg-grey/25">
+                        <img 
+                            src="/portfolio/images/design/portfolio_laptop.webp" 
+                            alt="Screenshot of a webpage titled: About Me. A black-and-white portrait of Kassidy Lewis is shown to the left" 
+                            class="aspect-video object-cover rounded hover:opacity-75 transition-opacity img-expand"
+                        >
+                    </div>
+                    <!-- Image grid end -->
                     <div id="the-objective" class="col-span-3 lg:col-span-1 pt-6 flex">
                         <div class="self-center w-full">
                             <div class="flex justify-between">
@@ -70,60 +79,48 @@ import "../styles/global.css";
                     </div>
                 </div>
             </section>
-            <nav class="md:my-12 p-6 md:px-24 lg:px-64 xl:px-96 text-center bg-black text-white" aria-labelledby="page-navigation">
-                <em>Jump to:</em>
-                <ul class="pt-2 flex justify-center divide-x-3 divide-grey font-semibold transition-all">
-                    <li>
-                        <a href="#the-objective" class="pr-4 font-semibold hover:text-teal hover:underline decoration-2 underline-offset-3 transition-all duration-300">
-                            Objective
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#the-method" class="px-4 font-semibold hover:text-teal hover:underline decoration-2 underline-offset-3 transition-all duration-300">
-                            Method
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#the-lesson" class="pl-4 font-semibold hover:text-teal hover:underline decoration-2 underline-offset-3 transition-all duration-300">
-                            Lesson
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="px-6 md:px-24 lg:px-48 xl:px-96">
-                <section id="the-method" class="py-12">
+            <SubNavigation
+                link_1="#the-objective"
+                label_1="Objective"
+                link_2="#the-method"
+                label_2="Method"
+                link_3="#the-lesson"
+                label_3="Lesson"
+            />
+            <div class="px-6 md:px-24 lg:px-48 2xl:px-96">
+                <section id="the-method">
                     <h2 class="font-display text-4xl">The Method</h2>
                     <p class="py-4">My portfolio site has seen many revisions and platform changes throughout the years. Originally hosted via Wix and now deployed using GitHub Pages, it has always been the principal project representing my long-time interest in web development. And so, as I've worked to improve my front-end skills the past year, I decided it was time for another fresh coat of paint.</p>
                     <p>The catch: This time, I would be developing the entire site from scratch.</p>
                     <div class="py-6 text-center">
-                        <img 
-                            src="/portfolio/images/design/portfolio_code.webp" 
-                            alt="Screenshot of HTML code within a code editing program" 
-                            class="w-full h-64 md:h-96 object-cover rounded hover:opacity-75 transition-opacity img-expand"
-                        >
+                        <div class="aspect-video rounded bg-grey/25">
+                            <img 
+                                src="/portfolio/images/design/portfolio_code.webp" 
+                                alt="Screenshot of HTML code within a code editing program" 
+                                class="aspect-video object-cover rounded hover:opacity-75 transition-opacity img-expand"
+                            >
+                        </div>
                         <p class="pt-2 text-grey">The project file directory shown in Visual Studio Code.</p>
                     </div>
                     <p class="pb-4">Following the principles of responsive design, which has been the basis of my understanding of web dev, this site was developed mobile-first. I used several modern frameworks to craft its latest version, as I explored each of them for the very first time: those being the development and build tool Astro, the CSS framework Tailwind (used for styling), and the JavaScript framework React (utilized for repeated components such as the header and footer).</p>
                     <p>I continue to update this site periodically, as well. Fellow developers may <a href="https://github.com/trunswicked/portfolio" class="font-semibold hover:text-teal hover:underline decoration-2 underline-offset-3 transition-all duration-300">view the GitHub repository here</a>.</p>
                 </section>
-                <section id="the-lesson" class="py-6">
+                <section id="the-lesson" class="py-12">
                     <div class="p-6 rounded bg-grey/10 border-2 border-grey/25">
                         <h2 class="font-display text-4xl">The Lesson</h2>
                         <p class="pt-4">Developing my own portfolio website and building upon my front-end expertise has not only made me more confident in my ability to provide HTML, CSS, and JavaScript services, but it is also an experience I will carry forward into every future project. The knowledge is invaluable at every step of web development, as I've gained a better understanding of what may or may not be viable at a front-end level.</p>
                     </div>
                 </section>
-                <nav class="py-12" aria-labelledby="project-navigation">
-                    <ProjectNav
-                        src_left="/portfolio/images/design/clock_entrance.webp"
-                        alt_left="Screenshot of a building entrance in a 3D environment"
-                        link_left="/portfolio/clock-exhibit/"
-                        name_left="Clock Exhibit"
-                        src_right="/portfolio/images/design/fairchild_home.webp"
-                        alt_right="Mobile and desktop versions of a website homepage shown side-by-side"
-                        link_right="/portfolio/fairchild-website/"
-                        name_right="Fairchild Website"
-                    />
-                </nav>
+                <ProjectNav
+                    src_left="/portfolio/images/design/clock_entrance.webp"
+                    alt_left="Screenshot of a building entrance in a 3D environment"
+                    link_left="/portfolio/clock-exhibit/"
+                    name_left="Clock Exhibit"
+                    src_right="/portfolio/images/design/fairchild_home.webp"
+                    alt_right="Mobile and desktop versions of a website homepage shown side-by-side"
+                    link_right="/portfolio/fairchild-website/"
+                    name_right="Fairchild Website"
+                />
             </div>
         </main>
         <Footer />
