@@ -1,0 +1,23 @@
+---
+const { linkOne, labelOne, linkTwo, labelTwo, linkThree, labelThree } = Astro.props;
+---
+<nav class="p-6 text-center bg-black text-white" aria-labelledby="page-navigation">
+    <em>Jump to:</em>
+    <ul class="pt-2 flex justify-center divide-x-3 divide-grey font-semibold transition-all">
+        <li>
+            <a href={linkOne} class="pr-4 font-semibold hover:text-teal hover:underline decoration-2 underline-offset-3 transition-all duration-300">
+                {labelOne}
+            </a>
+        </li>
+        <li>
+            <a href={linkTwo} class="px-4 font-semibold hover:text-teal hover:underline decoration-2 underline-offset-3 transition-all duration-300">
+                {labelTwo}
+            </a>
+        </li>
+        <li>
+            <a href={linkThree} class="pl-4 font-semibold hover:text-teal hover:underline decoration-2 underline-offset-3 transition-all duration-300">
+                {labelThree}
+            </a>
+        </li>
+    </ul>
+</nav>

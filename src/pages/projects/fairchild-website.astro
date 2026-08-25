@@ -1,0 +1,55 @@
+---
+import { Image } from 'astro:assets';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProjectPage from '../../layouts/ProjectPage.astro';
+import iconWordPress from '../../assets/images/svg/icon-wp.svg';
+import descImg from '../../assets/images/design/fairchild_compare.webp';
+---
+<BaseLayout pageTitle="Fairchild Website | Kassidy Lewis | Graphic Designer">
+    <ProjectPage 
+        projectName="Fairchild Website"
+        firstImg="../assets/images/design/fairchild_home.webp"
+        altOne="Mobile and desktop versions of a website homepage shown side-by-side"
+        secondImg="../assets/images/design/fairchild_industries.webp"
+        altTwo="Screenshot of a webpage titled 'Industries Served'"
+        thirdImg="../assets/images/design/fairchild_partners.webp"
+        altThree="Screenshot of a 3-column grid on a webpage titled 'Line Card'. In each column is the logo of a partner company"
+        fourthImg="../assets/images/design/fairchild_products.webp"
+        altFour="Screenshot of a webpage titled 'Product Catalog'. Many images of manufacturing equipment are shown"
+    >
+        <Fragment slot="objective">
+            Transferring an existing site concept into WordPress format, and tidying up the design.
+        </Fragment>
+        <div slot="icons" class="flex mt-1 gap-2">
+            <Image
+                src={iconWordPress}
+                alt="Logo of WordPress"
+                class="w-auto h-7"
+            />
+        </div>
+        <Fragment slot="method">
+            <p class="py-4">
+                This web development project is a new static site design for The Fairchild Company, a manufacturing firm headquartered in Tempe, Arizona. It is based on an existing concept, in which many of the original graphics, colors, etc. were re-used. The live site may be viewed <a href="https://thefairchildcompany.wordpress.com/" class="font-semibold hover:text-teal hover:underline decoration-2 underline-offset-3 transition-all duration-300">here</a> (link opens in new tab).
+            </p>
+            <p>
+                Firstly, I met with the company's representative and established a timeline and scope for the project. It would be developed using WordPress's site building platform, allowing anyone with the correct permissions to easily update the site content. It was for this reason that I suggested hosting via WordPress versus maintaining a fully custom site.
+            </p>
+            <div class="py-6 text-center">
+                <Image
+                    src={descImg}
+                    alt="Screenshot of two website home pages shown side by side. On the left is an outdated design, and on the right is the improved version" 
+                    class="rounded bg-grey/25 hover:opacity-75 transition-opacity img-expand"
+                />
+                <p class="pt-2 text-grey">The original Fairchild Company website (left) and the updated design (right).</p>
+            </div>
+            <p>
+                Development from then onwards would be very straightforward, whith the implementation of mobile functionality and basic site features such as forms. The final result is a fresh, modernized version of the outdated design.
+            </p>
+        </Fragment>
+        <Fragment slot="lesson">
+            <p class="pt-4">
+                While not my first time utilizing WordPress's site building platform, this project is a bit more complex than what I have built before, and was my first experience using WordPress's plugin library and collaborative features. It would also test my ability to convey these concepts to a client (as they would eventually be editing the site themselves), and to swiftly respond to their feedback.
+            </p>
+        </Fragment>
+    </ProjectPage>
+</BaseLayout>

@@ -1,0 +1,61 @@
+---
+import { Image } from 'astro:assets';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProjectPage from '../../layouts/ProjectPage.astro';
+import iconIllustrator from '../../assets/images/svg/icon-illustrator.svg';
+import iconInDesign from '../../assets/images/svg/icon-indesign.svg';
+import descImg from '../../assets/images/design/alesco_wip.webp';
+---
+<BaseLayout pageTitle="Logo Work | Kassidy Lewis | Graphic Designer">
+    <ProjectPage 
+        projectName="Logo Work"
+        firstImg="../assets/images/design/alesco_overview.webp"
+        altOne="Four logo designs for a landscaping design firm. Each logo features yellow-green text and a saguaro cactus icon"
+        secondImg="../assets/images/design/logos_tim.webp"
+        altTwo="Two logo designs, one black and one teal-colored, displayed vertically"
+        thirdImg="../assets/images/design/alesco_website.webp"
+        altThree="Screenshot of the home page of alescods.com"
+        fourthImg="../assets/images/design/alesco_final.webp"
+        altFour="A rectangular logo design shown on a pale green background"
+    >
+        <Fragment slot="objective">
+            Creating and presenting a series of potential logo designs for two small businesses.
+        </Fragment>
+        <div slot="icons" class="flex mt-1 gap-2">
+            <Image
+                src={iconIllustrator}
+                alt="Logo of Adobe Illustrator"
+                class="w-auto h-7"
+            />
+            <Image
+                src={iconInDesign}
+                alt="Logo of Adobe InDesign"
+                class="w-auto h-7"
+            />
+        </div>
+        <Fragment slot="method">
+            <p class="py-4">
+                In addition to illustration commissions, I have been contracted for logo work several times. Displayed on this page is the branding of <a href="https://alescods.com/" class="font-semibold hover:text-teal hover:underline decoration-2 underline-offset-3 transition-all duration-300">Alesco Design Solutions</a> (link opens in new tab), a landscaping firm based out of Phoenix, Arizona, and of Tim Scott, a New York City-based theatrical contractor.
+            </p>
+            <p>
+                In the case of Alesco Design Solutions, specialties of the firm include environmental planning, placemaking, aesthetics, and sustainability. It also prides itself in its local Arizona presence. With this in mind, I set out to craft the logo that would best represent their values.
+            </p>
+            <div class="py-6 text-center">
+                <Image
+                    src={descImg}
+                    alt="Green text logo shown in various fonts" 
+                    class="rounded bg-grey/25 hover:opacity-75 transition-opacity img-expand"
+                />
+                <p class="pt-2 text-grey">Several typeface variants that were presented during the development of the Alesco logo. Lusitana wins out in the end.</p>
+            </div>
+            <p>
+                It is pertinent to establish <i>where</i> a logo will appear, as well. Alesco's logo(s) were planned for use in signage, printed documents, sticker sheets, and on a website, indicating that the logos should be exported in PNG and SVG format to accommodate these mediums. The main logo takes on a rectangular shape, but several variants of the final design also appear on a 4 x 6 inch sticker sheet.
+            </p>
+        </Fragment>
+        <Fragment slot="lesson">
+            <p class="pt-4">
+                The branding project of Alesco is one of the first design ventures I have ever completed in a professional setting. I'm accustomed to contacting clients via social media and email, but this project allowed me to meet with a client face-to-face and develop a personal understanding of their needs. It was an excellent real-world experience.
+            </p>
+        </Fragment>
+    </ProjectPage>
+</BaseLayout>

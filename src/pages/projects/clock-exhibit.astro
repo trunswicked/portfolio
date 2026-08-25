@@ -1,0 +1,76 @@
+---
+import { Image } from 'astro:assets';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProjectPage from '../../layouts/ProjectPage.astro';
+import iconBlender from '../../assets/images/svg/icon-blender.svg';
+import iconPhotoshop from '../../assets/images/svg/icon-photoshop.svg';
+import descImg1 from '../../assets/images/design/clock_wip.webp';
+import descImg2 from '../../assets/images/design/clock_design.webp';
+---
+<BaseLayout pageTitle="Clock Exhibit | Kassidy Lewis | Graphic Designer">
+    <ProjectPage 
+        projectName="Clock Exhibit"
+        firstImg="../assets/images/design/clock_entrance.webp"
+        altOne="Screenshot of a building entrance in a 3D environment, with trees surrounding the entryway"
+        secondImg="../assets/images/design/clock_plane.webp"
+        altTwo="Plane view of a three-dimensional exhibit building with three octagonal rooms"
+        thirdImg="../assets/images/design/clock_hallway.webp"
+        altThree="Screenshot of the welcome sign next to a three-dimensional exhibit building entrance"
+        fourthImg="../assets/images/design/clock_interior.webp"
+        altFour="Screenshot of a three-dimensional octagonal interior, with various circular designs shown on the walls"
+    >
+        <Fragment slot="objective">
+            Developing an interactive exhibit experience showcasing the work of a senior graphic design class.
+        </Fragment>
+        <div slot="icons" class="flex mt-1 gap-2">
+            <Image
+                src={iconBlender}
+                alt="Logo of Blender"
+                class="w-auto h-7"
+            />
+            <Image
+                src={iconPhotoshop}
+                alt="Logo of Adobe Photoshop"
+                class="w-auto h-7"
+            />
+        </div>
+        <Fragment slot="method">
+            <p class="py-4">
+                My senior year at The Herberger Institute of Arizona State University saw the ideation and development of a collaborative class project named the Clock Exhibit. This fully online exhibit, built using Artsteps / Blender and viewed <a href="https://asuexhibit.wixsite.com/clockexhibit2024" class="font-semibold hover:text-teal hover:underline decoration-2 underline-offset-3 transition-all duration-300">here</a> (link opens in new tab), would showcase the "clock" projects of twenty-one total students, which are themed after a social issue of the student's choice.
+            </p>
+            <p class="pb-4">
+                I would develop this exhibit alongside six teammates, further divided into three specialized teams responsible for the exhibit itself, for advertising, and for the creation of a companion booklet. Group meetings and collaboration took place via text message, Zoom, and Miro.
+            </p>
+            <p>
+                As the leader of the exhibit task force, my role was to determine the layout of the Artsteps building and to manage all three-dimensional assets. Additionally, I was responsible for creating the simple Wix webpage in which the exhibit module is displayed.
+            </p>
+            <div class="py-6 text-center">
+                <Image
+                    src={descImg1}
+                    alt="Document showing three building sketches in plane view, alongside various wall and floor color combinations" 
+                    class="rounded bg-grey/25 hover:opacity-75 transition-opacity img-expand"
+                />
+                <p class="pt-2 text-grey">Several initial layout and style ideas for the online exhibit.</p>
+            </div>
+            <p>
+                The first week of development saw various layout and stylistic explorations. It was eventually decided that the exhibit would have three octagonal rooms. These rooms would represent a certain theme - Mental Health, Human Rights, and Environment / Technology - and clocks would be grouped in the same manner. Furthermore, the exhibit experience would begin at an outside entrance area, leading into a central hallway.
+            </p>
+            <div class="py-6 text-center">
+                <Image
+                    src={descImg2}
+                    alt="Five circular, clock-like designs shown side-by-side" 
+                    class="rounded bg-grey/25 hover:opacity-75 transition-opacity img-expand"
+                />
+                <p class="pt-2 text-grey">The Photoshop template used for each student and their clock design (also created by me).</p>
+            </div>
+            <p>
+                Lastly, a Wix webpage was created in order to host the exhibit module. It would function as a decorative frame and include directions as well as troubleshooting steps, in the event that the module fails to load.
+            </p>
+        </Fragment>
+        <Fragment slot="lesson">
+            <p class="pt-4">
+                As a freelance artist who has worked individually for many years, I am most familiar with managing my own work and schedule. However, this project saw me take charge of a small group, which was a fantastic collaborative experience. Not only has it improved my confidence in a leadership role, but it also required me to articulate concepts related to 3D modeling that my teammates were not familiar with, and to respond fluidly to suggestions.
+            </p>
+        </Fragment>
+    </ProjectPage>
+</BaseLayout>

@@ -10,6 +10,10 @@
     --color-grey: #808080;
 }
 
+@view-transition {
+    navigation: auto;
+}
+
 /* Lightbox */
 
 .img-expand {

@@ -1,0 +1,64 @@
+---
+import { Image } from 'astro:assets';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProjectPage from '../../layouts/ProjectPage.astro';
+import iconJQuery from '../../assets/images/svg/icon-jquery.svg';
+import iconXD from '../../assets/images/svg/icon-xd.svg';
+import descImg from '../../assets/images/design/map_xd.webp';
+---
+<BaseLayout pageTitle="Interactive Map | Kassidy Lewis | Graphic Designer">
+    <ProjectPage 
+        projectName="Interactive Map"
+        firstImg="../assets/images/design/map_overview.webp"
+        altOne="Screenshot of an interactive fantasy map on a black background"
+        secondImg="../assets/images/design/map_main.webp"
+        altTwo="Screenshot of a colorful fictional world map"
+        thirdImg="../assets/images/design/map_slides.webp"
+        altThree="Text descriptions of three different locations, separated by images of a jungle, beach, and oceanside house"
+        fourthImg="../assets/images/design/map_biome.webp"
+        altFour="Screenshot of a colorful fictional world map showing different biomes, with a color key shown to the right"
+    >
+        <Fragment slot="objective">
+            Creating an interactive mockup of a fictional world map.
+        </Fragment>
+        <div slot="icons" class="flex mt-1 gap-2">
+            <Image
+                src={iconXD}
+                alt="Logo of Adobe XD"
+                class="w-auto h-7"
+            />
+            <Image
+                src={iconJQuery}
+                alt="Logo of jQuery"
+                class="w-auto h-7"
+            />
+        </div>
+        <Fragment slot="method">
+            <p class="py-4">
+                This interactive map mockup is a personal venture that I've converted into additional prototyping practice, which is of course an essential skill to have as a web designer and developer. I consider it one of my most extensive projects.
+            </p>
+            <p>
+                The first iteration, created in early 2024 and developed within Adobe XD, features forty total buttons integrated into the map. These buttons toggle a respective "description" window.
+            </p>
+            <div class="py-6 text-center">
+                <Image
+                    src={descImg}
+                    alt="Screenshot of the interface of Adobe XD, with several text windows selected and highlighted in blue" 
+                    class="rounded bg-grey/25 hover:opacity-75 transition-opacity img-expand"
+                />
+                <p class="pt-2 text-grey">Screenshot of the initial (2024) prototyping setup in Adobe XD.</p>
+            </div>
+            <p class="pb-4">
+                Following the fantasy setting of the fictional world, the visuals of this first release would take on an elegant medieval style as well. Users are encouraged to interact with text buttons in order to explore different locales. Upon clicking a locale name, its description and a scenic image representing that specific territory are shown. The description window may be closed with another click.
+            </p>
+            <p>
+                Two years after the original was completed, I would decide to remaster this project with responsive web interactivity in mind. The map design received a sleek make-over - which can be seen at the very top of this page - and once completed, it will feature full JavaScript (jQuery) functionality.
+            </p>
+        </Fragment>
+        <Fragment slot="lesson">
+            <p class="pt-4">
+                While prototyping this project, I was compelled to view the experience from a user's perspective and solve problems accordingly. Questions such as "Is the design convenient?" and "Could the directions be simplified or improved in any way?" encouraged me to develop a sturdy and user-friendly interface. Constructing the map has also made me confident in my ability to design online user experiences.
+            </p>
+        </Fragment>
+    </ProjectPage>
+</BaseLayout>

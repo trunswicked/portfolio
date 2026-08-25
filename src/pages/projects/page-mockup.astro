@@ -1,0 +1,58 @@
+---
+import { Image } from 'astro:assets';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProjectPage from '../../layouts/ProjectPage.astro';
+import iconXD from '../../assets/images/svg/icon-xd.svg';
+import descImg from '../../assets/images/design/mockup_mood.webp';
+---
+<BaseLayout pageTitle="Portfolio Site | Kassidy Lewis | Graphic Designer">
+    <ProjectPage 
+        projectName="Portfolio Site"
+        firstImg="../assets/images/design/mockup_desktop.webp"
+        altOne="Webpage mockup shown on two desktop monitors"
+        secondImg="../assets/images/design/mockup_mobile.webp"
+        altTwo="Mobile webpage mockup displayed on an iPhone"
+        thirdImg="../assets/images/design/mockup_listings.webp"
+        altThree="Screenshot of a pet adoption site webpage that displays an image grid of local pets"
+        fourthImg="../assets/images/design/mockup_compare.webp"
+        altFour="Desktop and mobile designs of a webpage mockup shown side-by-side"
+    >
+        <Fragment slot="objective">
+            Creating a static and responsive webpage mockup utilizing Adobe XD.
+        </Fragment>
+        <div slot="icons" class="flex mt-1 gap-2">
+            <Image
+                src={iconXD}
+                alt="Logo of Adobe XD"
+                class="w-auto h-7"
+            />
+        </div>
+        <Fragment slot="method">
+            <p class="py-4">
+                Every building requires a foundation, and every website is built upon a design system. The goal of this project was to establish the visual style of a webpage and to construct a static "preview" out of it.
+            </p>
+            <p>
+                Given the choice of theme, I decided on a pet-centric design, as pet websites have straightforward imagery and objectives that would be simple to identify and replicate. (Also, who doesn't love puppies?)
+            </p>
+            <div class="py-6 text-center">
+                <Image
+                    src={descImg}
+                    alt="Moodboard for a webpage mockup" 
+                    class="rounded bg-grey/25 hover:opacity-75 transition-opacity img-expand"
+                />
+                <p class="pt-2 text-grey">Moodboard establishing colors, fonts, and button styles.</p>
+            </div>
+            <p class="pb-4">
+                The mockup was created with three adjectives in mind: playful, inviting, and reliable. The first two descriptors are established in font and color choices, as well as in the directive language. Reliability is evident in the grouping of information and consistency of margins, font sizes, et cetera.
+            </p>
+            <p>
+                Animated elements were also considered, despite the mockup being primarily static. The end result would allow the user to scroll through and filter hundreds of local pet listings.
+            </p>
+        </Fragment>
+        <Fragment slot="lesson">
+            <p class="pt-4">
+                This project was a fundamental exercise in the prototyping capabilities of Adobe XD, as well as in responsive design, as it includes both desktop and mobile versions of the mockup. It encouraged the mobile-first mindset that I would later tap into while developing this <a href="/portfolio/projects/portfolio-site/" class="font-semibold hover:text-teal hover:underline decoration-2 underline-offset-3 transition-all duration-300">portfolio website</a>. The ideation period is also a crucial component of web development, and this project has familiarized me with the process.
+            </p>
+        </Fragment>
+    </ProjectPage>
+</BaseLayout>

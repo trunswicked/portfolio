@@ -1,0 +1,83 @@
+---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import SubNavigation from '../components/SubNavigation.astro';
+const { projectName, firstImg, secondImg, thirdImg, fourthImg, altOne, altTwo, altThree, altFour } = Astro.props;
+const gallery = import.meta.glob<{ default: ImageMetadata }>('../assets/images/design/*.webp');
+if (gallery === undefined) throw new Error("No image exists in glob.");
+---
+<section class="pt-6 md:pt-12 pb-12 px-6 md:px-12 xl:px-64">
+    <a href="/portfolio/projects/" class="font-semibold hover:text-teal hover:underline decoration-2 underline-offset-3 transition-all duration-300">
+        <i class="fa-solid fa-angles-left mr-1 text-xs"></i>Back to Projects
+    </a>
+    <h1 class="py-4 font-display text-6xl xl:text-8xl">{projectName}</h1>
+    <div class="grid grid-cols-[2fr_1fr_2fr] gap-4">
+        <!-- Image grid -->
+         <Image 
+            src={gallery[firstImg]()}
+            alt={altOne}
+            class="col-span-3 rounded bg-grey/25 hover:opacity-75 transition-opacity img-expand"
+         />
+         <Image 
+            src={gallery[secondImg]()}
+            alt={altTwo}
+            class="rounded bg-grey/25 hover:opacity-75 transition-opacity img-expand"
+         />
+         <div class="col-span-2">
+            <Image 
+                src={gallery[thirdImg]()}
+                alt={altThree}
+                class="rounded h-full object-cover bg-grey/25 hover:opacity-75 transition-opacity img-expand"
+            />
+         </div>
+         <Image 
+            src={gallery[fourthImg]()}
+            alt={altFour}
+            class="col-span-3 lg:col-span-2 rounded bg-grey/25 hover:opacity-75 transition-opacity img-expand"
+         />
+        <!-- Image grid end -->
+        <div class="col-span-3 lg:col-span-1 pt-6 flex">
+            <div class="self-center w-full">
+                <div class="flex justify-between">
+                    <h2 id="the-objective" class="font-display text-4xl">The Objective</h2>
+                    <!-- Slot: Icons -->
+                    <slot name="icons" />
+                    <!-- -->
+                </div>
+                <p class="pt-4 lg:pb-4">
+                    <!-- Slot: Objective -->
+                    <slot name="objective" />
+                    <!-- -->
+                </p>
+                <div class="hidden lg:block -ml-36 h-15 bg-teal mix-blend-exclusion"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<SubNavigation
+    linkOne="#the-objective"
+    labelOne="Objective"
+    linkTwo="#the-method"
+    labelTwo="Method"
+    linkThree="#the-lesson"
+    labelThree="Lesson"
+/>
+<div class="pt-12 px-6 md:px-24 lg:px-48 2xl:px-96">
+    <section>
+        <div class="pb-2">
+            <h2 id="the-method" class="font-display text-4xl">The Method</h2>
+            <div class="bg-teal/25 h-5 -mt-4"></div>
+        </div>
+        <!-- Slot: Method -->
+        <slot name="method" />
+        <!-- -->
+    </section>
+    <section class="py-12">
+        <div class="p-6 rounded bg-grey/10 border-2 border-grey/25">
+            <h2 id="the-lesson" class="font-display text-4xl">The Lesson</h2>
+            <!-- Slot: Lesson -->
+            <slot name="lesson" />
+            <!-- -->
+        </div>
+    </section>
+</div>

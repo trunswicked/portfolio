@@ -1,0 +1,259 @@
+---
+import { Image } from 'astro:assets';
+import portfolioImg from '../assets/images/design/portfolio_home.webp';
+import fairchildImg from '../assets/images/design/fairchild_home.webp';
+import mockupImg from '../assets/images/design/mockup_desktop.webp';
+import logoImg from '../assets/images/design/alesco_overview.webp';
+import socmedImg from '../assets/images/design/socmed_comms.webp';
+import mapImg from '../assets/images/design/map_overview.webp';
+import clockImg from '../assets/images/design/clock_entrance.webp';
+import commImg from '../assets/images/illustration/commission_3.webp';
+import personalImg from '../assets/images/illustration/commission_22.webp';
+import animationImg from '../assets/images/illustration/animation_still.webp';
+---
+<h3 class="pt-4 pb-1 font-display text-2xl">
+    <i class="fa-solid fa-crop-simple opacity-25"></i> Graphic Design, Web Development
+</h3>
+<em>Hover or tap images to view project details</em>
+<div class="py-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+    <!-- Item start -->
+    <div id="portfolio-site">
+        <div class="relative overflow-hidden group rounded">
+            <a href="/portfolio/projects/portfolio-site/">
+                <Image 
+                    src={portfolioImg}
+                    alt="Mobile and desktop versions of a portfolio website shown side-by-side"
+                    class="bg-grey/25"
+                />
+            </a>
+            <div class="p-6 absolute top-full right-0 left-0 h-full text-white bg-black/90 group-hover:top-0 transition-all ease-in-out duration-300">
+                <div class="absolute bottom-0 mb-6">
+                    <a href="/portfolio/projects/portfolio-site/">
+                        <h4 class="font-display text-2xl text-teal hover:underline underline-offset-4 decoration-2">
+                            Portfolio Site<i class="fa-solid fa-angles-right ml-1 text-base"></i>
+                        </h4>
+                    </a>
+                    <p>2025 to present, Web Development</p>
+                </div>
+            </div>
+        </div>
+        <div class="pt-2 lg:hidden">
+            <span><strong>Portfolio Site</strong> | 2025 to present</span>
+        </div>
+    </div>
+    <!-- Item end -->
+    <!-- Item start -->
+    <div id="fairchild-website">
+        <div class="relative overflow-hidden group rounded">
+            <a href="/portfolio/projects/fairchild-website/">
+                <Image 
+                    src={fairchildImg}
+                    alt="Mobile and desktop versions of a website homepage shown side-by-side"
+                    class="bg-grey/25"
+                />
+            </a>
+            <div class="p-6 absolute top-full right-0 left-0 h-full text-white bg-black/90 group-hover:top-0 transition-all ease-in-out duration-300">
+                <div class="absolute bottom-0 mb-6">
+                    <a href="/portfolio/projects/fairchild-website/">
+                        <h4 class="font-display text-2xl text-teal hover:underline underline-offset-4 decoration-2">
+                            Fairchild Website<i class="fa-solid fa-angles-right ml-1 text-base"></i>
+                        </h4>
+                    </a>
+                    <p>2026, Web Development</p>
+                </div>
+            </div>
+        </div>
+        <div class="pt-2 lg:hidden">
+            <span><strong>Fairchild Website</strong> | 2026</span>
+        </div>
+    </div>
+    <!-- Item end -->
+    <!-- Item start -->
+    <div id="page-mockup">
+        <div class="relative overflow-hidden group rounded">
+            <a href="/portfolio/projects/page-mockup/">
+                <Image 
+                    src={mockupImg}
+                    alt="Webpage mockup shown on two desktop monitors"
+                    class="bg-grey/25"
+                />
+            </a>
+            <div class="p-6 absolute top-full right-0 left-0 h-full text-white bg-black/90 group-hover:top-0 transition-all ease-in-out duration-300">
+                <div class="absolute bottom-0 mb-6">
+                    <a href="/portfolio/projects/page-mockup/">
+                        <h4 class="font-display text-2xl text-teal hover:underline underline-offset-4 decoration-2">
+                            Page Mockup<i class="fa-solid fa-angles-right ml-1 text-base"></i>
+                        </h4>
+                    </a>
+                    <p>2024, Web Development</p>
+                </div>
+            </div>
+        </div>
+        <div class="pt-2 lg:hidden">
+            <span><strong>Page Mockup</strong> | 2024</span>
+        </div>
+    </div>
+    <!-- Item end -->
+    <!-- Item start -->
+    <div id="logo-work">
+        <div class="relative overflow-hidden group rounded">
+            <a href="/portfolio/projects/logo-work/">
+                <Image 
+                    src={logoImg}
+                    alt="Four logo designs for a landscaping design firm. Each logo features yellow-green text and a saguaro cactus icon"
+                    class="bg-grey/25"
+                />
+            </a>
+            <div class="p-6 absolute top-full right-0 left-0 h-full text-white bg-black/90 group-hover:top-0 transition-all ease-in-out duration-300">
+                <div class="absolute bottom-0 mb-6">
+                    <a href="/portfolio/projects/logo-work/">
+                        <h4 class="font-display text-2xl text-teal hover:underline underline-offset-4 decoration-2">
+                            Logo Work<i class="fa-solid fa-angles-right ml-1 text-base"></i>
+                        </h4>
+                    </a>
+                    <p>2024 to present, Graphic Design</p>
+                </div>
+            </div>
+        </div>
+        <div class="pt-2 lg:hidden">
+            <span><strong>Logo Work</strong> | 2024 to present</span>
+        </div>
+    </div>
+    <!-- Item end -->
+    <!-- Item start -->
+    <div id="social-media-graphics">
+        <div class="relative overflow-hidden group rounded">
+            <a href="/portfolio/projects/social-media-graphics/">
+                <Image 
+                    src={socmedImg}
+                    alt="Two social media graphics titled 'Commission Prices' shown side-by-side"
+                    class="bg-grey/25"
+                />
+            </a>
+            <div class="p-6 absolute top-full right-0 left-0 h-full text-white bg-black/90 group-hover:top-0 transition-all ease-in-out duration-300">
+                <div class="absolute bottom-0 mb-6">
+                    <a href="/portfolio/projects/social-media-graphics/">
+                        <h4 class="font-display text-2xl text-teal hover:underline underline-offset-4 decoration-2">
+                            Social Media Graphics<i class="fa-solid fa-angles-right ml-1 text-base"></i>
+                        </h4>
+                    </a>
+                    <p>2018 to present, Graphic Design</p>
+                </div>
+            </div>
+        </div>
+        <div class="pt-2 lg:hidden">
+            <span><strong>Social Media Graphics</strong> | 2018 to present</span>
+        </div>
+    </div>
+    <!-- Item end -->
+    <!-- Item start -->
+    <div id="interactive-map">
+        <div class="relative overflow-hidden group rounded">
+            <a href="/portfolio/projects/interactive-map/">
+                <Image 
+                    src={mapImg}
+                    alt="Screenshot of an interactive fantasy map on a black background"
+                    class="bg-grey/25"
+                />
+            </a>
+            <div class="p-6 absolute top-full right-0 left-0 h-full text-white bg-black/90 group-hover:top-0 transition-all ease-in-out duration-300">
+                <div class="absolute bottom-0 mb-6">
+                    <a href="/portfolio/projects/interactive-map/">
+                        <h4 class="font-display text-2xl text-teal hover:underline underline-offset-4 decoration-2">
+                            Interactive Map<i class="fa-solid fa-angles-right ml-1 text-base"></i>
+                        </h4>
+                    </a>
+                    <p>2024 to present, Web Development</p>
+                </div>
+            </div>
+        </div>
+        <div class="pt-2 lg:hidden">
+            <span><strong>Interactive Map</strong> | 2024 to present</span>
+        </div>
+    </div>
+    <!-- Item end -->
+    <!-- Item start -->
+    <div id="clock-exhibit">
+        <div class="relative overflow-hidden group rounded">
+            <a href="/portfolio/projects/clock-exhibit/">
+                <Image 
+                    src={clockImg}
+                    alt="Screenshot of a building entrance in a 3D environment, with trees surrounding the entryway"
+                    class="bg-grey/25"
+                />
+            </a>
+            <div class="p-6 absolute top-full right-0 left-0 h-full text-white bg-black/90 group-hover:top-0 transition-all ease-in-out duration-300">
+                <div class="absolute bottom-0 mb-6">
+                    <a href="/portfolio/projects/clock-exhibit/">
+                        <h4 class="font-display text-2xl text-teal hover:underline underline-offset-4 decoration-2">
+                            Clock Exhibit<i class="fa-solid fa-angles-right ml-1 text-base"></i>
+                        </h4>
+                    </a>
+                    <p>2024, Multimedia</p>
+                </div>
+            </div>
+        </div>
+        <div class="pt-2 lg:hidden">
+            <span><strong>Clock Exhibit</strong> | 2024</span>
+        </div>
+    </div>
+    <!-- Item end -->
+</div>
+<h3 class="pt-6 font-display text-2xl">
+    <i class="fa-solid fa-palette opacity-25"></i> Illustration
+</h3>
+<em>Hover or tap images to view project details</em>
+<div class="py-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+    <!-- Item start -->
+    <div id="commission-work">
+        <div class="relative overflow-hidden group rounded">
+            <a href="/portfolio/projects/commission-work/">
+                <Image 
+                    src={commImg}
+                    alt="Illustration of a winged character with long violet hair kneeling against an orange background"
+                    class="bg-grey/25"
+                />
+            </a>
+            <div class="p-6 absolute top-full right-0 left-0 h-full text-white bg-black/90 group-hover:top-0 transition-all ease-in-out duration-300">
+                <div class="absolute bottom-0 mb-6">
+                    <a href="/portfolio/projects/commission-work/">
+                        <h4 class="font-display text-2xl text-teal hover:underline underline-offset-4 decoration-2">
+                            Commission Work<i class="fa-solid fa-angles-right ml-1 text-base"></i>
+                        </h4>
+                    </a>
+                    <p>2018 to present, custom illustrations</p>
+                </div>
+            </div>
+        </div>
+        <div class="pt-2 lg:hidden">
+            <span><strong>Commission Work</strong> | 2018 to present</span>
+        </div>
+    </div>
+    <!-- Item end -->
+     <!-- Item start -->
+    <div id="personal-art">
+        <div class="relative overflow-hidden group rounded">
+            <a href="/portfolio/projects/personal-art/">
+                <Image 
+                    src={personalImg}
+                    alt="Illustration of a winged character in pirate attire flying and raising a sword"
+                    class="bg-grey/25"
+                />
+            </a>
+            <div class="p-6 absolute top-full right-0 left-0 h-full text-white bg-black/90 group-hover:top-0 transition-all ease-in-out duration-300">
+                <div class="absolute bottom-0 mb-6">
+                    <a href="/portfolio/projects/personal-art/">
+                        <h4 class="font-display text-2xl text-teal hover:underline underline-offset-4 decoration-2">
+                            Personal Artwork<i class="fa-solid fa-angles-right ml-1 text-base"></i>
+                        </h4>
+                    </a>
+                    <p>2018 to present, fan art and sketches</p>
+                </div>
+            </div>
+        </div>
+        <div class="pt-2 lg:hidden">
+            <span><strong>Personal Artwork</strong> | 2018 to present</span>
+        </div>
+    </div>
+    <!-- Item end -->
+</div>

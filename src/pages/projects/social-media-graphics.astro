@@ -1,0 +1,64 @@
+---
+import { Image } from 'astro:assets';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProjectPage from '../../layouts/ProjectPage.astro';
+import iconPhotoshop from '../../assets/images/svg/icon-photoshop.svg';
+import iconInDesign from '../../assets/images/svg/icon-indesign.svg';
+import descImg from '../../assets/images/design/socmed_bsky.webp';
+---
+<BaseLayout pageTitle="Social Media Graphics | Kassidy Lewis | Graphic Designer">
+    <ProjectPage 
+        projectName="Social Media Graphics"
+        firstImg="../assets/images/design/socmed_comms.webp"
+        altOne="Two social media graphics titled 'Commission Prices' shown side-by-side"
+        secondImg="../assets/images/design/socmed_holiday.webp"
+        altTwo="Social media graphic titled 'Holiday Icons' with two anime characters in Christmas outfits smiling at each other"
+        thirdImg="../assets/images/design/socmed_raffle.webp"
+        altThree="Social media graphic titled 'Raffle' with the photo of a smirking anime character"
+        fourthImg="../assets/images/design/socmed_comms_2.webp"
+        altFour="Two social media graphics titled 'Commissions Open' shown side-by-side"
+    >
+        <Fragment slot="objective">
+            Creating a series of social media graphics for the platforms X / Twitter, Bluesky, and Tumblr.
+        </Fragment>
+        <div slot="icons" class="flex mt-1 gap-2">
+            <Image
+                src={iconPhotoshop}
+                alt="Logo of Adobe Photoshop"
+                class="w-auto h-7"
+            />
+            <Image
+                src={iconInDesign}
+                alt="Logo of Adobe InDesign"
+                class="w-auto h-7"
+            />
+        </div>
+        <Fragment slot="method">
+            <p class="py-4">
+                As a young artist who found herself making connections through platforms such as DeviantART and Tumblr in the early 2000s, I've witnessed many of my creative peers offer custom artwork services, and would eventually decide to advertise my own <a href="/portfolio/projects/commission-work/" class="font-semibold hover:text-teal hover:underline decoration-2 underline-offset-3 transition-all duration-300">digital art commissions</a> as well.
+            </p>
+            <p>
+                At first, these ads weren't worth writing home about. But as I've continuously worked to improve my illustration skills and streamline my commission process, I realized it may be advantageous to create a series of personal graphics that I could re-use across multiple platforms.
+            </p>
+            <div class="py-6 text-center">
+                <Image
+                    src={descImg}
+                    alt="Screenshot of a Bluesky post titled 'September Commissions Open'" 
+                    class="rounded bg-grey/25 hover:opacity-75 transition-opacity img-expand"
+                />
+                <p class="pt-2 text-grey">Graphic shown in a post on Bluesky Social.</p>
+            </div>
+            <p class="pb-4">
+                Firstly, these ads would communicate information such as pricing and the quality of my work from a quick glance. A strong visual heirarchy is required to capture attention, especially online! The graphics shown on this page were also created in tandem with my portfolio website, and utilize a similar visual style.
+            </p>
+            <p>
+                Graphics are sized according to each platform's recommended dimensions. If necessary, several iterations are saved in order to avoid any unflattering cropping.
+            </p>
+        </Fragment>
+        <Fragment slot="lesson">
+            <p class="pt-4">
+                Constructing my own social media graphics has made me keenly aware of the common practices of online advertising. It has also assisted in improving my fundamental design skills, as well as my Adobe InDesign proficiency. Additionally, several of my commissioners have cited the graphics as a factor in their decision to work with me, suggesting that their usage has indeed captured more attention!
+            </p>
+        </Fragment>
+    </ProjectPage>
+</BaseLayout>

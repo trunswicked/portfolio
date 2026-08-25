@@ -1,0 +1,64 @@
+---
+import { Image } from 'astro:assets';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProjectPage from '../../layouts/ProjectPage.astro';
+import iconFigma from '../../assets/images/svg/icon-figma.svg';
+import iconAstro from '../../assets/images/svg/icon-astro.svg';
+import descImg from '../../assets/images/design/portfolio_code.webp';
+---
+<BaseLayout pageTitle="Portfolio Site | Kassidy Lewis | Graphic Designer">
+    <ProjectPage 
+        projectName="Portfolio Site"
+        firstImg="../assets/images/design/portfolio_home.webp"
+        altOne="Mobile and desktop versions of a portfolio website shown side-by-side"
+        secondImg="../assets/images/design/portfolio_mobile.webp"
+        altTwo="Screenshot of a webpage titled 'Projects', showing an image grid"
+        thirdImg="../assets/images/design/portfolio_home_2.webp"
+        altThree="Screenshot of a webpage titled 'Social Media Graphics'"
+        fourthImg="../assets/images/design/portfolio_laptop.webp"
+        altFour="Screenshot of a webpage titled 'About Me'. A black-and-white portrait of Kassidy Lewis is shown to the left"
+    >
+        <Fragment slot="objective">
+            Developing my portfolio site from the ground-up. <i>(You are here!)</i>
+        </Fragment>
+        <div slot="icons" class="flex mt-1 gap-2">
+            <Image
+                src={iconFigma}
+                alt="Logo of Figma"
+                class="w-auto h-7"
+            />
+            <Image
+                src={iconAstro}
+                alt="Logo of Astro JS"
+                class="w-auto h-7"
+            />
+        </div>
+        <Fragment slot="method">
+            <p class="py-4">
+                My portfolio site has seen many revisions and platform changes throughout the years. Originally hosted via Wix and now deployed using GitHub Pages, it has always been the principal project representing my long-time interest in web development. And so, as I've worked to improve my front-end skills (beginning in 2025), I decided that it was time for another fresh coat of paint.
+            </p>
+            <p>
+                The catch: This time, I would be developing the entire site from scratch.
+            </p>
+            <div class="py-6 text-center">
+                <Image
+                    src={descImg}
+                    alt="Screenshot of HTML code within a code editing program" 
+                    class="rounded bg-grey/25 hover:opacity-75 transition-opacity img-expand"
+                />
+                <p class="pt-2 text-grey">The project file directory shown in Visual Studio Code.</p>
+            </div>
+            <p class="pb-4">
+                Following the principles of responsive design, which has been the basis of my understanding of web development, this site was developed mobile-first. I used several modern frameworks to craft its latest version, as I explored each of them for the very first time: these being the development and build tool Astro, the CSS framework Tailwind, and the JavaScript framework React.
+            </p>
+            <p>
+                I continue to update this site periodically, as well. Fellow developers may view the GitHub repository <a href="https://github.com/trunswicked/portfolio" class="font-semibold hover:text-teal hover:underline decoration-2 underline-offset-3 transition-all duration-300">here</a> (link opens in new tab).
+            </p>
+        </Fragment>
+        <Fragment slot="lesson">
+            <p class="pt-4">
+                Developing my own portfolio website and building upon my front-end expertise has not only made me more confident in my ability to provide HTML, CSS, and JavaScript services, but it is also an experience I will carry forward into every future project. The knowledge is invaluable at every step of web development, as I've gained a better understanding of what may or may not be viable at a front-end level.
+            </p>
+        </Fragment>
+    </ProjectPage>
+</BaseLayout>
